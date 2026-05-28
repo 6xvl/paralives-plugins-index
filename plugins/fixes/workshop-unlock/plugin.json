@@ -2,10 +2,9 @@
   "id": "6ix.WorkshopUnlock",
   "name": "Workshop Unlock",
   "author": "6ix",
-  "category": "fixes",
   "description": "Fixes the Steam Workshop 50-mod cap. Without this, mods past #50 get deleted on game launch.",
   "version": "1.0.0",
-  "download": "https://github.com/6xvl/paralives-plugins-index/releases/download/WorkshopUnlock-v1.0.0/WorkshopUnlock.dll",
+  "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/workshop-unlock/WorkshopUnlock.dll",
   "sha256": "4e1c7dfe042c7f4f69da5dea521441cfc3bb695a758aacddfc0d2d3ca2135c33",
   "size_bytes": 17920,
   "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/workshop-unlock"

@@ -35,7 +35,7 @@ MaxPagesToFetch = 200
 
 If you're not using the 6ix Plugin Hub:
 
-1. Download `WorkshopUnlock.dll` from the [latest release](https://github.com/6xvl/paralives-plugins-index/releases/tag/WorkshopUnlock-v1.0.0)
+1. Download [`WorkshopUnlock.dll`](https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/workshop-unlock/WorkshopUnlock.dll) (lives in this repo, not a release)
 2. Drop into `Paralives/BepInEx/plugins/`
 3. Restart Paralives
 4. Verify in BepInEx console: `[6ix/WORKSHOP-UNLOCK] fetched N subscribed mods across P page(s) ...`
