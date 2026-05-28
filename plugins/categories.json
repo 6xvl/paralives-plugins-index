@@ -1,0 +1,10 @@
+{
+  "categories": [
+    { "id": "fixes",           "label": "Fixes",           "order": 1 },
+    { "id": "performance",     "label": "Performance",     "order": 2 },
+    { "id": "ui",              "label": "UI",              "order": 3 },
+    { "id": "quality-of-life", "label": "Quality of Life", "order": 4 },
+    { "id": "gameplay",        "label": "Gameplay",        "order": 5 },
+    { "id": "tools",           "label": "Tools",           "order": 6 }
+  ]
+}
