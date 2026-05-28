@@ -1,17 +1,26 @@
 {
-  "schema": 1,
-  "updated": "2026-05-28T23:00:00Z",
+  "schema": 2,
+  "updated": "2026-05-28T23:30:00Z",
+  "categories": [
+    { "id": "fixes",            "label": "Fixes",            "order": 1 },
+    { "id": "performance",      "label": "Performance",      "order": 2 },
+    { "id": "ui",               "label": "UI",               "order": 3 },
+    { "id": "quality-of-life",  "label": "Quality of Life",  "order": 4 },
+    { "id": "gameplay",         "label": "Gameplay",         "order": 5 },
+    { "id": "tools",            "label": "Tools",            "order": 6 }
+  ],
   "plugins": [
     {
       "id": "6ix.WorkshopUnlock",
       "name": "Workshop Unlock",
       "author": "6ix",
+      "category": "fixes",
       "description": "Fixes the Steam Workshop 50-mod cap. Without this, mods past #50 get deleted on game launch.",
       "version": "1.0.0",
       "download": "https://github.com/6xvl/paralives-plugins-index/releases/download/WorkshopUnlock-v1.0.0/WorkshopUnlock.dll",
       "sha256": "4e1c7dfe042c7f4f69da5dea521441cfc3bb695a758aacddfc0d2d3ca2135c33",
       "size_bytes": 17920,
-      "homepage": "https://github.com/6xvl/paralives-plugins-index"
+      "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/workshop-unlock"
     }
   ]
 }
