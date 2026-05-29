@@ -35,6 +35,21 @@
   ],
   "plugins": [
     {
+      "id": "6ix.PluginHub",
+      "name": "Plugin Hub",
+      "author": "6ix",
+      "description": "The in-game mod browser itself. Auto-updates so you always get the latest fixes and new features.",
+      "version": "1.0.1",
+      "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/loader/PluginHub.dll",
+      "sha256": "d99e75f58189499a7c3f1d89e0bf0e7bfb9cf27d3c27fb17bdff40a09edeaf3d",
+      "size_bytes": 78848,
+      "homepage": "https://github.com/6xvl/paralives-plugins-index",
+      "category": "tools",
+      "min_game_version": 0,
+      "max_game_version": 0,
+      "discontinued": false
+    },
+    {
       "id": "6ix.WorkshopUnlock",
       "name": "Not Enough Workshop Mods",
       "author": "6ix",
