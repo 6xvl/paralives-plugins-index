@@ -96,6 +96,14 @@ Get-FileHash -Algorithm SHA256 .\YourPlugin.dll
 
 ---
 
+## ☕ Support
+
+If Plugin Hub or any of these mods make your Paralives experience better, you can tip a coffee at **[ko-fi.com/6xvls](https://ko-fi.com/6xvls)**. No account needed, 0% fees, takes 30 seconds. Goes directly toward more mods + maintenance time.
+
+The blue **Support Me** button in the Plugin Hub UI links to the same page.
+
+---
+
 ## 📜 License
 
 [MIT](LICENSE) — do what you want, just don't blame us if your save breaks. 6ix takes no responsibility for community-submitted mods; they're MIT-licensed by their authors.
