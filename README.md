@@ -18,22 +18,28 @@ That's it. Everything in the zip is set up to run on first launch.
 
 Paralives runs under Proton. One extra step is required because Proton's Wine ships its own `winhttp.dll` that shadows ours unless you tell Wine to use the native (game folder) copy.
 
-After extracting the zip, run **one** of these:
+**Easiest — Steam Launch Options (no protontricks needed):**
 
-**Option A — `protontricks` GUI (easiest):**
-```bash
-protontricks 1118520 winecfg
-```
-In the dialog: **Libraries** tab → type `winhttp` in the override field → **Add** → click it in the list → **Edit** → set to **native, builtin** → OK.
+1. Right-click **Paralives** in your Steam library → **Properties**
+2. Paste this into the **Launch Options** box:
 
-**Option B — fully non-interactive:**
+   ```
+   WINEDLLOVERRIDES="winhttp=n,b" %command%
+   ```
+
+3. Close the properties dialog and launch the game normally.
+
+`n,b` = "native first, then builtin" — Wine uses our `winhttp.dll` (BepInEx) and falls back to its own if missing. Works on Proton (Steam Deck + desktop), no permanent prefix modification.
+
+**Alternative — protontricks (modifies the prefix permanently):**
+
 ```bash
 protontricks 1118520 winetricks --force --no-isolate winhttp=n,b
 ```
 
-`1118520` is Paralives' Steam App ID. After running once, launch the game through Steam normally.
+`1118520` is Paralives' Steam App ID. Either approach works; the launch-options route is simpler and easier to undo.
 
-Verified working: extraction with KDE Ark (right-click → Extract → Here), launching via Steam with default Proton.
+Verified working on Linux: extraction with KDE Ark (right-click → Extract Here), launching via Steam with default Proton. Credit @maxtron95 + @sea for the recipe.
 
 ### What's in the bundle
 
