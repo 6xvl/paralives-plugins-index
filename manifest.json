@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-29T11:00:00Z",
+  "updated": "2026-05-29T11:45:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -38,7 +38,7 @@
       "id": "6ix.PluginHub",
       "name": "Plugin Hub",
       "author": "6ix",
-      "description": "The in-game mod browser itself. Auto-updates so you always get the latest fixes and new features.",
+      "description": "Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch — no manual file copying after the first install.",
       "version": "1.0.7",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/loader/PluginHub.dll",
       "sha256": "3418174cf8516f112638776fdbe0ede21bfc6092a11cb3cd92c4194b5b055a20",
@@ -53,7 +53,7 @@
       "id": "6ix.StatsOverlay",
       "name": "Stats Overlay",
       "author": "6ix",
-      "description": "Unity-style performance panel: FPS, CPU/render times, draw calls, triangles, vertices, batches, audio level. Press F3 to toggle.",
+      "description": "Unity-Editor-style stats panel — FPS, CPU/render times, draw calls, triangles, audio level, animation counts. Top-left overlay. Press F3 to toggle.",
       "version": "1.0.4",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/tools/stats-overlay/StatsOverlay.dll",
       "sha256": "e7784f55a3758d1a863a8e80b2dc76e417f1eebc0743da93b0be8455f5ace89f",
@@ -63,12 +63,12 @@
     },
     {
       "id": "6ix.FpsLimiter",
-      "name": "FPS Limiter",
+      "name": "Menu FPS Limiter",
       "author": "6ix",
-      "description": "Caps FPS based on context: 60 in main menu, 30 when window is alt-tabbed, uncapped in actual gameplay. All three thresholds configurable.",
-      "version": "1.0.0",
+      "description": "Caps the frame rate at 60 in the main menu and 30 when the window isn't focused (alt-tab). Gameplay runs uncapped by default. Stops your fans screaming while the menu sits at 200+ fps doing nothing. All three thresholds configurable.",
+      "version": "1.0.1",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/performance/fps-limiter/FpsLimiter.dll",
-      "sha256": "10a7436e10dbc7a913ce55d3205b0db0d0595a1470fff8661f9baa2a409165ed",
+      "sha256": "32ae575992e65eefedac0b1b5b219a456ac1ce09c559e24524a0d35e440c5717",
       "size_bytes": 9216,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/performance/fps-limiter",
       "category": "performance"
@@ -77,7 +77,7 @@
       "id": "6ix.WorkshopUnlock",
       "name": "Not Enough Workshop Mods",
       "author": "6ix",
-      "description": "Fixes the Steam Workshop 50-mod cap. Without this, mods past #50 get deleted on game launch.",
+      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Install if you use Workshop.",
       "version": "1.0.0",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/workshop-unlock/WorkshopUnlock.dll",
       "sha256": "4e1c7dfe042c7f4f69da5dea521441cfc3bb695a758aacddfc0d2d3ca2135c33",
