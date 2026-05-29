@@ -1,126 +1,107 @@
 # 6ix Plugin Hub — Paralives mods
 
-Browse and install community mods for [Paralives](https://store.steampowered.com/app/1118520/Paralives/) from inside the game. No manual file copying.
+Browse and install community mods for [Paralives](https://store.steampowered.com/app/1118520/Paralives/) from inside the game. No manual file copying after the first install.
 
 ---
 
-## 🟢 How to install (10 minutes, no tech knowledge needed)
+## Quick install
 
-You need **two downloads**: BepInEx 5 (the mod loader Paralives uses) and the Plugin Hub `.dll` (the in-game browser). Both are free and open source.
+**[⬇ Download the modpack zip (1.1 MB)](https://github.com/6xvl/paralives-plugins-index/raw/main/loader/6ix-paralives-modpack.zip)**
 
-### 1. Download BepInEx 5 (x64, Mono)
+1. **Find your Paralives folder.** Steam → right-click **Paralives** → **Manage** → **Browse local files**. You should see `Paralives.exe` inside.
+2. **Extract the zip into that folder.** Right-click the downloaded `6ix-paralives-modpack.zip` → **Extract All…** → pick your Paralives folder. After it finishes, `winhttp.dll` should sit next to `Paralives.exe` and a `BepInEx` folder should appear beside it.
+3. **Launch the game.** Click **Mods** on the main menu — you'll see a new **Plugin Hub** tab next to *Control Panel*. Click it to browse, install, and toggle mods.
 
-**[⬇ BepInEx 5 latest release](https://github.com/BepInEx/BepInEx/releases/latest)** → from the **Assets** list at the bottom, grab the file named like **`BepInEx_win_x64_5.4.X.X.zip`** (NOT `BepInEx_unix_…` and NOT the `6_X` previews).
+That's it. Everything in the zip is set up to run on first launch.
 
-### 2. Find your Paralives folder
-- Open **Steam**
-- Right-click **Paralives** in your library → **Manage** → **Browse local files**
-- A folder opens. You should see `Paralives.exe` inside. This is the folder you need.
+### What's in the bundle
 
-Typical path: `C:\Program Files (x86)\Steam\steamapps\common\Paralives\`
-
-### 3. Extract BepInEx into the Paralives folder
-- Right-click `BepInEx_win_x64_5.4.X.X.zip` → **Extract all…**
-- Pick the Paralives folder from step 2
-- After extracting you should see new files next to `Paralives.exe`: `winhttp.dll`, `doorstop_config.ini`, and a `BepInEx` folder
-
-### 4. Run Paralives once, then close it
-This lets BepInEx create the folders it needs (`BepInEx/plugins/`, `BepInEx/config/`, etc.). Just launch, wait until the main menu shows, then quit.
-
-### 5. Download Plugin Hub
-
-**[⬇ PluginHub.dll](https://github.com/6xvl/paralives-plugins-index/raw/main/loader/PluginHub.dll)** — direct download, always the latest.
-
-(Optional, for the paranoid: verify the SHA256 hash matches the one in [`loader/README.md`](loader/README.md). PowerShell: `Get-FileHash -Algorithm SHA256 .\PluginHub.dll`)
-
-### 6. Drop the .dll into the plugins folder
-Move `PluginHub.dll` into `Paralives\BepInEx\plugins\` (this folder was created in step 4).
-
-### 7. Launch the game
-- Start Paralives through Steam
-- Click **Mods** on the main menu
-- You'll see a new blue **Plugin Hub** tab next to *Control Panel* — click it
-- Browse, install, restart. Done.
+| File | Purpose |
+|---|---|
+| `winhttp.dll` + `doorstop_config.ini` | [BepInEx 5](https://github.com/BepInEx/BepInEx) — the mod loader Paralives uses (MIT). |
+| `BepInEx/core/*` | BepInEx runtime + HarmonyX/MonoMod patching libraries. |
+| `BepInEx/plugins/PluginHub.dll` | This project — the in-game browser. |
+| `BepInEx/plugins/FpsLimiter.dll` | Menu FPS Limiter (60 menu / 30 unfocused / uncapped gameplay). |
+| `BepInEx/plugins/StatsOverlay.dll` | F3 stats panel. |
+| `BepInEx/plugins/WorkshopUnlock.dll` | Fixes the 50-mod Steam Workshop cap. |
 
 ### Updating
-- **Update BepInEx:** re-extract a newer `BepInEx_win_x64_*.zip` into Paralives, overwrite when prompted
-- **Update Plugin Hub:** re-download `PluginHub.dll` from the link in step 5, overwrite the one in `BepInEx/plugins/`
+
+After the initial install, Plugin Hub auto-updates itself and all installed mods on each game launch (configurable per plugin). To update the bundled BepInEx runtime later, re-download this zip and overwrite.
 
 ### Uninstall
-Delete `winhttp.dll`, `doorstop_config.ini`, and the `BepInEx` folder from your Paralives folder. The game returns to vanilla.
+
+Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepInEx` folder from your Paralives folder. The game returns to vanilla.
+
+### Verify the download
+
+```powershell
+Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
+```
+
+Expected: `794c8d6219bf2a9e007fa3a239a94961489ea75b3efb691e5b9e0d5300229524`
 
 ---
 
-## 🧩 Available mods
+## Available mods
 
 | Category | Mod | What it does |
 |---|---|---|
-| Fixes | **Not Enough Workshop Mods** | Fixes the Steam Workshop 50-mod cap. Without it, mods past #50 get **deleted** from your computer on game launch. |
+| Tools | **Plugin Hub** | Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch. Bundled with the modpack. |
+| Performance | **Menu FPS Limiter** | Caps the frame rate at 60 in the main menu and 30 when the window isn't focused (alt-tab). Gameplay runs uncapped by default. Stops your fans screaming while the menu sits at 200+ fps doing nothing. |
+| Tools | **Stats Overlay** | Unity-Editor-style stats panel — FPS, CPU/render times, draw calls, triangles, audio level, animation counts. Top-left overlay. Press F3 to toggle. |
+| Fixes | **Not Enough Workshop Mods** | Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get **deleted** from your computer on game launch. Install if you use Workshop. |
 
-*(More on the way. Open a PR to add yours — see Contributing below.)*
+Hover any mod card in Plugin Hub for the same description in-game. More on the way — open a PR to add yours, see [Contributing](#contributing).
 
 ---
 
-## ⚙️ How it works (short)
+## How it works
 
-- The **Plugin Hub** is a small loader you install once.
-- It reads `manifest.json` from this repo and shows a list of mods.
-- When you click Download, it grabs the mod's `.dll` from this repo, verifies the file with a SHA256 hash, and drops it into your game's plugin folder.
+- The **Plugin Hub** is a small loader you install once via the modpack zip.
+- It reads `manifest.json` from this repo and lists every available mod with its description, version, and SHA256.
+- When you click **Install** on a card, Plugin Hub downloads the mod's `.dll` straight from this repo, verifies the file against the manifest hash, and writes it into `BepInEx/plugins/`.
 - Mods only load after a game restart — no risky mid-session injection.
 
 ---
 
-## 🛡️ Safety
+## Safety
 
-- **Hash verification on every download.** If the file doesn't match the hash in the manifest, it's rejected and nothing is written.
-- **Open source.** Every mod's source code, the loader, and this index are all on GitHub. You can read or audit any of it.
-- **No telemetry, no analytics, no calling home.** Plugin Hub only ever connects to GitHub to fetch the manifest and DLLs you click on.
+- **Hash verification on every download.** If a file doesn't match the manifest hash, it's rejected and nothing is written.
+- **No telemetry, no analytics, no calling home.** Plugin Hub only connects to GitHub to fetch the manifest and the DLLs you explicitly click on.
+- **Auditable.** Every mod's source, the loader, and the manifest are all in this repo.
 
 ---
 
-## 🛠️ For mod authors — contributing
+## Contributing
 
-1. Build your `.dll` against BepInEx 5 + HarmonyX, target `netstandard2.0`
-2. Open a PR adding:
-   - `plugins/<category>/<your-id>/YourPlugin.dll`
-   - `plugins/<category>/<your-id>/plugin.json` (no `category` field — folder is the source of truth)
-   - `plugins/<category>/<your-id>/README.md`
-3. Run `python tools/build-manifest.py` to regenerate the root `manifest.json` (or let CI do it)
+To get your mod into Plugin Hub:
 
-**Categories:** `fixes`, `performance`, `ui`, `quality-of-life`, `gameplay`, `tools`
-
-### plugin.json schema
-```json
-{
-  "id": "yourorg.PluginName",
-  "name": "Display Name",
-  "author": "Your Handle",
-  "description": "One sentence.",
-  "version": "1.0.0",
-  "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/<cat>/<id>/YourPlugin.dll",
-  "sha256": "abc123…",
-  "size_bytes": 12345,
-  "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/<cat>/<id>"
-}
-```
+1. Build it as a normal BepInEx 5 plugin (`BaseUnityPlugin` + `[BepInPlugin]`), target `netstandard2.0`.
+2. Pick a category from `manifest.json` → `categories` (`fixes`, `performance`, `ui`, `quality-of-life`, `gameplay`, `tools`).
+3. Open a PR adding:
+   - `plugins/<category>/<plugin-name>/YourPlugin.dll`
+   - `plugins/<category>/<plugin-name>/README.md`
+   - A new entry in `manifest.json` with `id` matching your `[BepInPlugin]` GUID, the raw-URL `download`, computed `sha256`, matching `size_bytes`, and a 1–2 sentence `description` (what the user sees on hover).
 
 Get the SHA256 with PowerShell:
+
 ```powershell
 Get-FileHash -Algorithm SHA256 .\YourPlugin.dll
 ```
 
 ---
 
-## ☕ Support
+## Support
 
 If Plugin Hub or any of these mods make your Paralives experience better, you can tip a coffee at **[ko-fi.com/6xvls](https://ko-fi.com/6xvls)**. No account needed, 0% fees, takes 30 seconds. Goes directly toward more mods + maintenance time.
 
-The blue **Support Me** button in the Plugin Hub UI links to the same page.
+The blue **Support this project** button in the Plugin Hub UI links to the same page.
 
 ---
 
-## 📜 License
+## License
 
-[MIT](LICENSE) — do what you want, just don't blame us if your save breaks. 6ix takes no responsibility for community-submitted mods; they're MIT-licensed by their authors.
+[MIT](LICENSE) — do what you want, just don't blame us if your save breaks. 6ix takes no responsibility for community-submitted mods; they're MIT-licensed by their authors. Bundled BepInEx is MIT — see the [BepInEx repo](https://github.com/BepInEx/BepInEx) for upstream copyright.
 
 — [@6xvl](https://github.com/6xvl)
