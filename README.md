@@ -39,7 +39,7 @@ protontricks 1118520 winetricks --force --no-isolate winhttp=n,b
 
 `1118520` is Paralives' Steam App ID. Either approach works; the launch-options route is simpler and easier to undo.
 
-Verified working on Linux: extraction with KDE Ark (right-click → Extract Here), launching via Steam with default Proton. Credit @maxtron95 + @sea for the recipe.
+Verified working on Linux: extraction with KDE Ark (right-click → Extract Here), launching via Steam with default Proton. Credit @maxtron95 + @seajr for the recipe.
 
 ### What's in the bundle
 
