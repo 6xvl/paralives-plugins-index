@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-29T13:25:00Z",
+  "updated": "2026-05-29T13:45:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -39,10 +39,10 @@
       "name": "Plugin Hub",
       "author": "6ix",
       "description": "Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch — no manual file copying after the first install. Also fixes the Steam-offline boot hang so the game launches without internet.",
-      "version": "1.0.9",
+      "version": "1.0.10",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/loader/PluginHub.dll",
-      "sha256": "1210452fd0d5991fa494f06a2d215b01923c8bb1035b1d32f34074e4acd2f135",
-      "size_bytes": 565760,
+      "sha256": "5214217f805901241f6e14143bdc7313545739a8dae1587e85a3e34718d1d8d2",
+      "size_bytes": 567296,
       "homepage": "https://github.com/6xvl/paralives-plugins-index",
       "category": "tools",
       "min_game_version": 0,
@@ -77,11 +77,11 @@
       "id": "6ix.WorkshopUnlock",
       "name": "Not Enough Workshop Mods",
       "author": "6ix",
-      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Install if you use Workshop.",
-      "version": "1.0.1",
+      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Also loads your downloaded Workshop mods when Steam is offline (vanilla would skip them). Install if you use Workshop.",
+      "version": "1.0.2",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/not-enough-workshop-mods/WorkshopUnlock.dll",
-      "sha256": "215e8a9dc114bfa53b7bf94e6c465c4645cb220527c2a99da1a81f3dea00061f",
-      "size_bytes": 18432,
+      "sha256": "4048ecc16eed4096e8d9267e2e2594955b06851164bc26ac6b5c8525d8dd1ba2",
+      "size_bytes": 19456,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/not-enough-workshop-mods",
       "category": "fixes"
     }
