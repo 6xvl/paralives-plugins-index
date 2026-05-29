@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-29T00:00:00Z",
+  "updated": "2026-05-29T07:55:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -39,10 +39,10 @@
       "name": "Plugin Hub",
       "author": "6ix",
       "description": "The in-game mod browser itself. Auto-updates so you always get the latest fixes and new features.",
-      "version": "1.0.4",
+      "version": "1.0.5",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/loader/PluginHub.dll",
-      "sha256": "5236daf37122abd0b332b9c8c6afaca104e0d50f05486c50caaa978390fa749e",
-      "size_bytes": 67072,
+      "sha256": "b2342323d70b8f6d7f661b3e4b4efa806b6019e3596cfda206e2a5b6efba1e63",
+      "size_bytes": 67584,
       "homepage": "https://github.com/6xvl/paralives-plugins-index",
       "category": "tools",
       "min_game_version": 0,

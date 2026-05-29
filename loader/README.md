@@ -6,7 +6,7 @@ This folder holds the live `PluginHub.dll` — the BepInEx plugin that adds the 
 
 **SHA256 (verify after download):**
 ```
-5236daf37122abd0b332b9c8c6afaca104e0d50f05486c50caaa978390fa749e
+b2342323d70b8f6d7f661b3e4b4efa806b6019e3596cfda206e2a5b6efba1e63
 ```
 
 PowerShell:
