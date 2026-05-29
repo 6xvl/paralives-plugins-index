@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-29T12:15:00Z",
+  "updated": "2026-05-29T12:25:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -39,9 +39,9 @@
       "name": "Plugin Hub",
       "author": "6ix",
       "description": "Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch — no manual file copying after the first install.",
-      "version": "1.0.7",
+      "version": "1.0.8",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/loader/PluginHub.dll",
-      "sha256": "3418174cf8516f112638776fdbe0ede21bfc6092a11cb3cd92c4194b5b055a20",
+      "sha256": "a4ee6191859f1dc22a661d65ddc3e49147e443cbe54d7a487b3bf636631094eb",
       "size_bytes": 561664,
       "homepage": "https://github.com/6xvl/paralives-plugins-index",
       "category": "tools",
