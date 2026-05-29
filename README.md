@@ -14,6 +14,27 @@ Browse and install community mods for [Paralives](https://store.steampowered.com
 
 That's it. Everything in the zip is set up to run on first launch.
 
+### Linux / Steam Deck (Proton)
+
+Paralives runs under Proton. One extra step is required because Proton's Wine ships its own `winhttp.dll` that shadows ours unless you tell Wine to use the native (game folder) copy.
+
+After extracting the zip, run **one** of these:
+
+**Option A — `protontricks` GUI (easiest):**
+```bash
+protontricks 1118520 winecfg
+```
+In the dialog: **Libraries** tab → type `winhttp` in the override field → **Add** → click it in the list → **Edit** → set to **native, builtin** → OK.
+
+**Option B — fully non-interactive:**
+```bash
+protontricks 1118520 winetricks --force --no-isolate winhttp=n,b
+```
+
+`1118520` is Paralives' Steam App ID. After running once, launch the game through Steam normally.
+
+Verified working: extraction with KDE Ark (right-click → Extract → Here), launching via Steam with default Proton.
+
 ### What's in the bundle
 
 | File | Purpose |
