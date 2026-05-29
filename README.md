@@ -6,7 +6,7 @@ Browse and install community mods for [Paralives](https://store.steampowered.com
 
 ## Quick install
 
-**[⬇ Download the modpack zip (1.1 MB)](https://github.com/6xvl/paralives-plugins-index/raw/main/loader/6ix-paralives-modpack.zip)**
+**[⬇ Download the modpack zip — latest release](https://github.com/6xvl/paralives-plugins-index/releases/latest)** (1.1 MB)
 
 1. **Find your Paralives folder.** Steam → right-click **Paralives** → **Manage** → **Browse local files**. You should see `Paralives.exe` inside.
 2. **Extract the zip into that folder.** Right-click the downloaded `6ix-paralives-modpack.zip` → **Extract All…** → pick your Paralives folder. After it finishes, `winhttp.dll` should sit next to `Paralives.exe` and a `BepInEx` folder should appear beside it.
