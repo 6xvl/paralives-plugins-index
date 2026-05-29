@@ -39,7 +39,7 @@ Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepIn
 Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
 ```
 
-Expected: `00b164758d20ea90d66500dc5f6f6beb929c0ad9cc942b828684c1d1adeb4cbe`
+Expected: `58d853b79a92a23ebbb598fcc8b2cd26318f2b09b4764fd275d2898172f018cb`
 
 ---
 
