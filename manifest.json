@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-29T12:25:00Z",
+  "updated": "2026-05-29T13:15:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -72,6 +72,18 @@
       "size_bytes": 9216,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/performance/fps-limiter",
       "category": "performance"
+    },
+    {
+      "id": "paralives.offlineworkshopenabler",
+      "name": "Offline Workshop Enabler",
+      "author": "lptb9",
+      "description": "Lets Paralives finish loading when Steam is in offline mode. Without it, the game hangs waiting for Steam Workshop's initial download check which never completes without internet. Plays nicely with Not Enough Workshop Mods.",
+      "version": "1.0.0",
+      "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/offline-workshop-enabler/Paralives_OfflineWorkshopEnabler.dll",
+      "sha256": "f9d75f61757f3035991fb43d53295ced4e10a425625742673da39f1705f56530",
+      "size_bytes": 5632,
+      "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/offline-workshop-enabler",
+      "category": "fixes"
     },
     {
       "id": "6ix.WorkshopUnlock",
