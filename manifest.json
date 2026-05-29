@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-29T09:05:00Z",
+  "updated": "2026-05-29T11:00:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -60,6 +60,18 @@
       "size_bytes": 18432,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/tools/stats-overlay",
       "category": "tools"
+    },
+    {
+      "id": "6ix.FpsLimiter",
+      "name": "FPS Limiter",
+      "author": "6ix",
+      "description": "Caps FPS based on context: 60 in main menu, 30 when window is alt-tabbed, uncapped in actual gameplay. All three thresholds configurable.",
+      "version": "1.0.0",
+      "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/performance/fps-limiter/FpsLimiter.dll",
+      "sha256": "10a7436e10dbc7a913ce55d3205b0db0d0595a1470fff8661f9baa2a409165ed",
+      "size_bytes": 9216,
+      "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/performance/fps-limiter",
+      "category": "performance"
     },
     {
       "id": "6ix.WorkshopUnlock",
