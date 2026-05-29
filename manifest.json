@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-29T08:20:00Z",
+  "updated": "2026-05-29T08:35:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -54,9 +54,9 @@
       "name": "Stats Overlay",
       "author": "6ix",
       "description": "Unity-style performance panel: FPS, CPU/render times, draw calls, triangles, vertices, batches, audio level. Press F3 to toggle.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/tools/stats-overlay/StatsOverlay.dll",
-      "sha256": "bb6c1a6636f59723384f4f139b3b6e2001c0d0e42bae44b1fb857b8ff63bacfa",
+      "sha256": "35ec7657962efbda7d3082be1f25a65ca72e838e168e4a9d166e559087a5699e",
       "size_bytes": 16896,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/tools/stats-overlay",
       "category": "tools"
