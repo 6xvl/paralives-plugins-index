@@ -66,7 +66,7 @@ Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepIn
 Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
 ```
 
-Expected: `58d853b79a92a23ebbb598fcc8b2cd26318f2b09b4764fd275d2898172f018cb`
+Expected: `1a7176f47c01e6dc106adda2631624656bf6afac9074ad04f8e54887e05351a6`
 
 ---
 
@@ -74,10 +74,9 @@ Expected: `58d853b79a92a23ebbb598fcc8b2cd26318f2b09b4764fd275d2898172f018cb`
 
 | Category | Mod | Bundled? | What it does |
 |---|---|---|---|
-| Tools | **Plugin Hub** | ✅ pre-installed | Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch. |
+| Tools | **Plugin Hub** | ✅ pre-installed | Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch. Also fixes the Steam-offline boot hang so the game launches without internet. |
 | Tools | **Stats Overlay** | ✅ pre-installed | Unity-Editor-style stats panel — FPS, CPU/render times, draw calls, triangles, audio level, animation counts. Top-left overlay. Press F3 to toggle. |
 | Performance | **Menu FPS Limiter** | install from Hub | Caps the frame rate at 60 in the main menu and 30 when the window isn't focused (alt-tab). Gameplay runs uncapped by default. Stops your fans screaming while the menu sits at 200+ fps doing nothing. |
-| Fixes | **Offline Workshop Enabler** | install from Hub | Lets Paralives finish loading when Steam is in offline mode. By [lptb9](https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/offline-workshop-enabler) — bundled into the manifest with credit. |
 | Fixes | **Not Enough Workshop Mods** | install from Hub | Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get **deleted** from your computer on game launch. Install if you use Workshop. |
 
 Hover any mod card in Plugin Hub for the same description in-game. More on the way — open a PR to add yours, see [Contributing](#contributing).
