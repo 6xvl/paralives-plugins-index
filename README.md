@@ -47,6 +47,7 @@ Verified working on Linux: extraction with KDE Ark (right-click → Extract Here
 |---|---|
 | `winhttp.dll` + `doorstop_config.ini` | [BepInEx 5](https://github.com/BepInEx/BepInEx) (forked) — the mod loader Paralives uses (MIT). |
 | `BepInEx/core/*` | BepInEx runtime + HarmonyX/MonoMod patching libraries. |
+| `BepInEx/patchers/PluginHubUpdater.dll` | Tiny pre-load updater — fetches the manifest at boot, replaces any installed plugin whose on-disk hash differs from the latest, then hands off to the chainloader. Updates apply on the same launch, no second restart. |
 | `BepInEx/plugins/PluginHub.dll` | This project — the in-game browser. |
 | `BepInEx/plugins/StatsOverlay.dll` | F3 stats panel — useful for spotting performance issues. |
 
@@ -66,7 +67,7 @@ Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepIn
 Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
 ```
 
-Expected: `1a7176f47c01e6dc106adda2631624656bf6afac9074ad04f8e54887e05351a6`
+Expected: `c6d3cf1983e102c2ed0e1d365059c1deabccb90895fff9ed2c92087647646e20`
 
 ---
 
