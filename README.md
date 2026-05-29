@@ -4,32 +4,47 @@ Browse and install community mods for [Paralives](https://store.steampowered.com
 
 ---
 
-## 🟢 How to install (5 minutes, no tech knowledge needed)
+## 🟢 How to install (10 minutes, no tech knowledge needed)
 
-### 1. Download the pack
-**[⬇ Download latest release](https://github.com/6xvl/paralives-plugins-index/releases/latest)** — grab the `.zip` file at the bottom of the release page.
+You need **two downloads**: BepInEx 5 (the mod loader Paralives uses) and the Plugin Hub `.dll` (the in-game browser). Both are free and open source.
+
+### 1. Download BepInEx 5 (x64, Mono)
+
+**[⬇ BepInEx 5 latest release](https://github.com/BepInEx/BepInEx/releases/latest)** → from the **Assets** list at the bottom, grab the file named like **`BepInEx_win_x64_5.4.X.X.zip`** (NOT `BepInEx_unix_…` and NOT the `6_X` previews).
 
 ### 2. Find your Paralives folder
 - Open **Steam**
 - Right-click **Paralives** in your library → **Manage** → **Browse local files**
-- A folder opens. This is the folder you need.
+- A folder opens. You should see `Paralives.exe` inside. This is the folder you need.
 
-It usually looks like:
-```
-C:\Program Files (x86)\Steam\steamapps\common\Paralives\
-```
-You should see `Paralives.exe` inside.
+Typical path: `C:\Program Files (x86)\Steam\steamapps\common\Paralives\`
 
-### 3. Extract the zip into that folder
-- Right-click the `.zip` you downloaded → **Extract all…**
+### 3. Extract BepInEx into the Paralives folder
+- Right-click `BepInEx_win_x64_5.4.X.X.zip` → **Extract all…**
 - Pick the Paralives folder from step 2
-- After extracting, you should see new files: `winhttp.dll`, `doorstop_config.ini`, and a `BepInEx` folder, all next to `Paralives.exe`
+- After extracting you should see new files next to `Paralives.exe`: `winhttp.dll`, `doorstop_config.ini`, and a `BepInEx` folder
 
-### 4. Launch the game
-- Start Paralives normally through Steam
-- On the main menu, look for the blue **🔌 6ix Plugin Hub** button (top-right corner)
-- Click it → browse mods → click **Download** on the ones you want
-- Restart Paralives. Done.
+### 4. Run Paralives once, then close it
+This lets BepInEx create the folders it needs (`BepInEx/plugins/`, `BepInEx/config/`, etc.). Just launch, wait until the main menu shows, then quit.
+
+### 5. Download Plugin Hub
+
+**[⬇ PluginHub.dll](https://github.com/6xvl/paralives-plugins-index/raw/main/loader/PluginHub.dll)** — direct download, always the latest.
+
+(Optional, for the paranoid: verify the SHA256 hash matches the one in [`loader/README.md`](loader/README.md). PowerShell: `Get-FileHash -Algorithm SHA256 .\PluginHub.dll`)
+
+### 6. Drop the .dll into the plugins folder
+Move `PluginHub.dll` into `Paralives\BepInEx\plugins\` (this folder was created in step 4).
+
+### 7. Launch the game
+- Start Paralives through Steam
+- Click **Mods** on the main menu
+- You'll see a new blue **Plugin Hub** tab next to *Control Panel* — click it
+- Browse, install, restart. Done.
+
+### Updating
+- **Update BepInEx:** re-extract a newer `BepInEx_win_x64_*.zip` into Paralives, overwrite when prompted
+- **Update Plugin Hub:** re-download `PluginHub.dll` from the link in step 5, overwrite the one in `BepInEx/plugins/`
 
 ### Uninstall
 Delete `winhttp.dll`, `doorstop_config.ini`, and the `BepInEx` folder from your Paralives folder. The game returns to vanilla.
