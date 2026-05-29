@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-29T07:55:00Z",
+  "updated": "2026-05-29T08:20:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -39,15 +39,27 @@
       "name": "Plugin Hub",
       "author": "6ix",
       "description": "The in-game mod browser itself. Auto-updates so you always get the latest fixes and new features.",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/loader/PluginHub.dll",
-      "sha256": "b2342323d70b8f6d7f661b3e4b4efa806b6019e3596cfda206e2a5b6efba1e63",
-      "size_bytes": 67584,
+      "sha256": "e79a41a7cb90fc7b265f66c08f9233f9d07ae788778c1172beb4d0afe52e1a4a",
+      "size_bytes": 561664,
       "homepage": "https://github.com/6xvl/paralives-plugins-index",
       "category": "tools",
       "min_game_version": 0,
       "max_game_version": 0,
       "discontinued": false
+    },
+    {
+      "id": "6ix.StatsOverlay",
+      "name": "Stats Overlay",
+      "author": "6ix",
+      "description": "Unity-style performance panel: FPS, CPU/render times, draw calls, triangles, vertices, batches, audio level. Press F3 to toggle.",
+      "version": "1.0.0",
+      "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/tools/stats-overlay/StatsOverlay.dll",
+      "sha256": "bb6c1a6636f59723384f4f139b3b6e2001c0d0e42bae44b1fb857b8ff63bacfa",
+      "size_bytes": 16896,
+      "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/tools/stats-overlay",
+      "category": "tools"
     },
     {
       "id": "6ix.WorkshopUnlock",
