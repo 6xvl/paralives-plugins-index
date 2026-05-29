@@ -1,0 +1,11 @@
+{
+  "id": "6ix.WorkshopUnlock",
+  "name": "Not Enough Workshop Mods",
+  "author": "6ix",
+  "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Install if you use Workshop.",
+  "version": "1.0.1",
+  "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/not-enough-workshop-mods/WorkshopUnlock.dll",
+  "sha256": "215e8a9dc114bfa53b7bf94e6c465c4645cb220527c2a99da1a81f3dea00061f",
+  "size_bytes": 18432,
+  "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/not-enough-workshop-mods"
+}
