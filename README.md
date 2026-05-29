@@ -40,7 +40,7 @@ Delete `winhttp.dll`, `doorstop_config.ini`, and the `BepInEx` folder from your 
 
 | Category | Mod | What it does |
 |---|---|---|
-| Fixes | **Workshop Unlock** | Fixes the Steam Workshop 50-mod cap. Without it, mods past #50 get **deleted** from your computer on game launch. |
+| Fixes | **Not Enough Workshop Mods** | Fixes the Steam Workshop 50-mod cap. Without it, mods past #50 get **deleted** from your computer on game launch. |
 
 *(More on the way. Open a PR to add yours — see Contributing below.)*
 

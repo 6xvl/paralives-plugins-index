@@ -1,6 +1,6 @@
-# Workshop Unlock
+# Not Enough Workshop Mods
 
-Fixes Paralives' Steam Workshop 50-mod cap.
+Fixes Paralives' Steam Workshop 50-mod cap. (Previously named "Workshop Unlock".)
 
 ## The bug
 
