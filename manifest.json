@@ -36,7 +36,7 @@
   "plugins": [
     {
       "id": "6ix.WorkshopUnlock",
-      "name": "Workshop Unlock",
+      "name": "Not Enough Workshop Mods",
       "author": "6ix",
       "description": "Fixes the Steam Workshop 50-mod cap. Without this, mods past #50 get deleted on game launch.",
       "version": "1.0.0",
