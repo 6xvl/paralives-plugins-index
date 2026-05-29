@@ -18,12 +18,12 @@ That's it. Everything in the zip is set up to run on first launch.
 
 | File | Purpose |
 |---|---|
-| `winhttp.dll` + `doorstop_config.ini` | [BepInEx 5](https://github.com/BepInEx/BepInEx) — the mod loader Paralives uses (MIT). |
+| `winhttp.dll` + `doorstop_config.ini` | [BepInEx 5](https://github.com/BepInEx/BepInEx) (forked) — the mod loader Paralives uses (MIT). |
 | `BepInEx/core/*` | BepInEx runtime + HarmonyX/MonoMod patching libraries. |
 | `BepInEx/plugins/PluginHub.dll` | This project — the in-game browser. |
-| `BepInEx/plugins/FpsLimiter.dll` | Menu FPS Limiter (60 menu / 30 unfocused / uncapped gameplay). |
-| `BepInEx/plugins/StatsOverlay.dll` | F3 stats panel. |
-| `BepInEx/plugins/WorkshopUnlock.dll` | Fixes the 50-mod Steam Workshop cap. |
+| `BepInEx/plugins/StatsOverlay.dll` | F3 stats panel — useful for spotting performance issues. |
+
+Other mods (Menu FPS Limiter, Not Enough Workshop Mods, anything else listed below) install from inside the Plugin Hub UI in one click — they're not pre-bundled so first-launch is minimal.
 
 ### Updating
 
@@ -39,18 +39,18 @@ Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepIn
 Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
 ```
 
-Expected: `f570932774b0319840b9f91eca989349604ecd1dfdcacf5f5b493a2034f38ea8`
+Expected: `00b164758d20ea90d66500dc5f6f6beb929c0ad9cc942b828684c1d1adeb4cbe`
 
 ---
 
 ## Available mods
 
-| Category | Mod | What it does |
-|---|---|---|
-| Tools | **Plugin Hub** | Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch. Bundled with the modpack. |
-| Performance | **Menu FPS Limiter** | Caps the frame rate at 60 in the main menu and 30 when the window isn't focused (alt-tab). Gameplay runs uncapped by default. Stops your fans screaming while the menu sits at 200+ fps doing nothing. |
-| Tools | **Stats Overlay** | Unity-Editor-style stats panel — FPS, CPU/render times, draw calls, triangles, audio level, animation counts. Top-left overlay. Press F3 to toggle. |
-| Fixes | **Not Enough Workshop Mods** | Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get **deleted** from your computer on game launch. Install if you use Workshop. |
+| Category | Mod | Bundled? | What it does |
+|---|---|---|---|
+| Tools | **Plugin Hub** | ✅ pre-installed | Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch. |
+| Tools | **Stats Overlay** | ✅ pre-installed | Unity-Editor-style stats panel — FPS, CPU/render times, draw calls, triangles, audio level, animation counts. Top-left overlay. Press F3 to toggle. |
+| Performance | **Menu FPS Limiter** | install from Hub | Caps the frame rate at 60 in the main menu and 30 when the window isn't focused (alt-tab). Gameplay runs uncapped by default. Stops your fans screaming while the menu sits at 200+ fps doing nothing. |
+| Fixes | **Not Enough Workshop Mods** | install from Hub | Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get **deleted** from your computer on game launch. Install if you use Workshop. |
 
 Hover any mod card in Plugin Hub for the same description in-game. More on the way — open a PR to add yours, see [Contributing](#contributing).
 
