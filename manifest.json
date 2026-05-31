@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-31T20:00:00Z",
+  "updated": "2026-05-31T21:00:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -69,11 +69,11 @@
       "id": "6ix.WorkshopUnlock",
       "name": "Not Enough Workshop Mods",
       "author": "6ix",
-      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Also loads your downloaded Workshop mods when Steam is offline (vanilla would skip them). v1.0.8 fixes a TargetParameterCountException on some Paralives builds where GetPageAsync takes more than one parameter (older Facepunch.Steamworks versions) — invoke args are now built dynamically from the actual method signature.",
-      "version": "1.0.8",
+      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Also loads your downloaded Workshop mods when Steam is offline (vanilla would skip them). v1.0.9 adds diagnostic logging of the exact GetPageAsync signature found and args used, and searches DeclaredOnly first to avoid picking up interface method stubs with wrong parameter counts.",
+      "version": "1.0.9",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/not-enough-workshop-mods/WorkshopUnlock.dll",
-      "sha256": "073f134a5dec2391278ec62890f30248cfe4356c1e6858e3179853fc1b7e2a4c",
-      "size_bytes": 27136,
+      "sha256": "74a48755b505be91ebe38d3402ac4944b13e2b50582996231eefa53a66e3ad64",
+      "size_bytes": 28160,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/not-enough-workshop-mods",
       "category": "fixes"
     },
