@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-30T00:00:00Z",
+  "updated": "2026-05-31T00:00:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -66,40 +66,52 @@
       "discontinued": false
     },
     {
-      "id": "6ix.StatsOverlay",
-      "name": "Stats Overlay",
+      "id": "6ix.WorkshopUnlock",
+      "name": "Not Enough Workshop Mods",
       "author": "6ix",
-      "description": "Unity-Editor-style stats panel — FPS, CPU/render times, draw calls, triangles, audio level, animation counts. Top-left overlay. Press F3 to toggle.",
-      "version": "1.0.4",
-      "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/tools/stats-overlay/StatsOverlay.dll",
-      "sha256": "e7784f55a3758d1a863a8e80b2dc76e417f1eebc0743da93b0be8455f5ace89f",
-      "size_bytes": 18432,
-      "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/tools/stats-overlay",
-      "category": "tools"
+      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Also loads your downloaded Workshop mods when Steam is offline (vanilla would skip them). Install if you use Workshop.",
+      "version": "1.0.3",
+      "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/not-enough-workshop-mods/WorkshopUnlock.dll",
+      "sha256": "b101c9ade4bf82a0de40f379e3e0cd887d7ab5d8b581093cadf874fe091edf91",
+      "size_bytes": 20992,
+      "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/not-enough-workshop-mods",
+      "category": "fixes"
+    },
+    {
+      "id": "6ix.StopReimporting",
+      "name": "Stop Reimporting My Mods",
+      "author": "6ix",
+      "description": "Fixes the 'Reimporting Assets' hang that can freeze the game indefinitely when a mod has a missing or corrupted asset. Also stops a single broken mod from aborting the entire boot sequence — other mods load fine and the bad one is skipped with a log message.",
+      "version": "1.0.1",
+      "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/stop-reimporting/StopReimporting.dll",
+      "sha256": "eaf027b732b3d67966ec69fe87e6fcf489d5cade573f9b4d553be2ca9cb9705f",
+      "size_bytes": 12800,
+      "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/stop-reimporting",
+      "category": "fixes"
     },
     {
       "id": "6ix.FpsLimiter",
       "name": "Menu FPS Limiter",
       "author": "6ix",
-      "description": "Caps the frame rate at 60 in the main menu and 30 when the window isn't focused (alt-tab). Gameplay runs uncapped by default. Stops your fans screaming while the menu sits at 200+ fps doing nothing. All three thresholds configurable.",
-      "version": "1.0.1",
+      "description": "Stops your fans screaming while the menu sits at 200+ fps doing nothing. Caps menu to 60fps, drops to 10fps when alt-tabbed, 3fps when minimized. Gameplay runs uncapped. All thresholds configurable.",
+      "version": "1.0.3",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/performance/fps-limiter/FpsLimiter.dll",
-      "sha256": "32ae575992e65eefedac0b1b5b219a456ac1ce09c559e24524a0d35e440c5717",
-      "size_bytes": 9216,
+      "sha256": "dda106b6094c1b9abb4ac349adb8caeb79c040fbe993dec9bfde060a63895daa",
+      "size_bytes": 10752,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/performance/fps-limiter",
       "category": "performance"
     },
     {
-      "id": "6ix.WorkshopUnlock",
-      "name": "Not Enough Workshop Mods",
+      "id": "6ix.StatsOverlay",
+      "name": "Stats Overlay",
       "author": "6ix",
-      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Also loads your downloaded Workshop mods when Steam is offline (vanilla would skip them). Install if you use Workshop.",
-      "version": "1.0.2",
-      "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/not-enough-workshop-mods/WorkshopUnlock.dll",
-      "sha256": "4048ecc16eed4096e8d9267e2e2594955b06851164bc26ac6b5c8525d8dd1ba2",
-      "size_bytes": 19456,
-      "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/not-enough-workshop-mods",
-      "category": "fixes"
+      "description": "Unity-Editor-style stats panel — FPS, CPU/render times, draw calls, triangles, audio level, animation counts. Top-left overlay. Press F3 to toggle.",
+      "version": "1.0.5",
+      "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/tools/stats-overlay/StatsOverlay.dll",
+      "sha256": "5071e9fa0db02975d691d62285c49d5f3c9678122e2168a64d2970d9670cde3f",
+      "size_bytes": 18432,
+      "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/tools/stats-overlay",
+      "category": "tools"
     }
   ]
 }
