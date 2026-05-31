@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-31T23:30:00Z",
+  "updated": "2026-05-31T23:59:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -54,11 +54,11 @@
       "id": "6ix.PluginHub",
       "name": "Plugin Hub",
       "author": "6ix",
-      "description": "Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch — no manual file copying after the first install. Also fixes the Steam-offline boot hang so the game launches without internet. v1.0.16 fix: after a fresh install the card no longer reverts to showing the Install button when the manifest re-fetches (hub re-open, 5-min cache expiry).",
-      "version": "1.0.16",
+      "description": "Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch — no manual file copying after the first install. Also fixes the Steam-offline boot hang so the game launches without internet. v1.0.17: 25 bug fixes — atomic DLL writes, uninstall/auto-update loop fixes, manifest parser improvements, listener leak fix, and more.",
+      "version": "1.0.17",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/loader/PluginHub.dll",
-      "sha256": "535e579cd57d7e2f96347e5d9cec876a2b1d7d27dbb3c54d76afe359f2ba7005",
-      "size_bytes": 571904,
+      "sha256": "6ec9989f3a8520244511b5641cc3dfa75910461b30a2ef9d6dd1321c56ff6e58",
+      "size_bytes": 573440,
       "homepage": "https://github.com/6xvl/paralives-plugins-index",
       "category": "tools",
       "min_game_version": 0,
