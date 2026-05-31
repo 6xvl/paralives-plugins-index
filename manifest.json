@@ -69,10 +69,10 @@
       "id": "6ix.WorkshopUnlock",
       "name": "Not Enough Workshop Mods",
       "author": "6ix",
-      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Also loads your downloaded Workshop mods when Steam is offline (vanilla would skip them). v1.0.6 fixes a reflection bug where ResultPage.ResultCount being a field instead of a property disabled the Steam path for some Windows users.",
-      "version": "1.0.6",
+      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Also loads your downloaded Workshop mods when Steam is offline (vanilla would skip them). v1.0.7 adds lazy Steamworks type resolution so Mac/Linux gets the full Steam multi-page fetch (Facepunch.Steamworks.Posix wasn't loaded at plugin Awake time, but is by the time the method is called).",
+      "version": "1.0.7",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/not-enough-workshop-mods/WorkshopUnlock.dll",
-      "sha256": "dce22e00b2a971a63a7fb8477592f9a38c9a3b54fa8385ce9704131869d826f0",
+      "sha256": "ebd3a97fa0edb64f06633edc2fb75e85dac63ba46d656d1f50bcf23139873ccf",
       "size_bytes": 26624,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/not-enough-workshop-mods",
       "category": "fixes"
