@@ -122,7 +122,7 @@ Get-FileHash -Algorithm SHA256 .\YourPlugin.dll
 
 ## Support
 
-If Plugin Hub or any of these mods make your Paralives experience better, you can tip a coffee at **[ko-fi.com/6xvls](https://ko-fi.com/6xvls)**. No account needed, 0% fees, takes 30 seconds. Goes directly toward more mods + maintenance time.
+If Plugin Hub or any of these mods make your Paralives experience better, consider supporting on **[Patreon](https://www.patreon.com/6xvl)**. Goes directly toward more mods + maintenance time.
 
 The blue **Support this project** button in the Plugin Hub UI links to the same page.
 
