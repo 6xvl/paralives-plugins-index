@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-31T12:00:00Z",
+  "updated": "2026-05-31T18:00:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -54,10 +54,10 @@
       "id": "6ix.PluginHub",
       "name": "Plugin Hub",
       "author": "6ix",
-      "description": "Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch — no manual file copying after the first install. Also fixes the Steam-offline boot hang so the game launches without internet. v1.0.12 adds default_install support: critical-fix plugins flagged in the manifest auto-install on launch.",
-      "version": "1.0.12",
+      "description": "Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch — no manual file copying after the first install. Also fixes the Steam-offline boot hang so the game launches without internet. v1.0.13 fixes a per-frame FindObjectOfType call that caused 15fps for all users with the hub installed.",
+      "version": "1.0.13",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/loader/PluginHub.dll",
-      "sha256": "827d283a40c43e263a37065503e584311ae18ab240dc34c44fcf325bd898402d",
+      "sha256": "ba3f79e192b7fb9e5a230b7d297b486c022c683416531e313e211b741ca76176",
       "size_bytes": 571392,
       "homepage": "https://github.com/6xvl/paralives-plugins-index",
       "category": "tools",
@@ -69,11 +69,11 @@
       "id": "6ix.WorkshopUnlock",
       "name": "Not Enough Workshop Mods",
       "author": "6ix",
-      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Also loads your downloaded Workshop mods when Steam is offline (vanilla would skip them). Install if you use Workshop.",
-      "version": "1.0.3",
+      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Also loads your downloaded Workshop mods when Steam is offline (vanilla would skip them). v1.0.4 fixes a Mac/Linux crash where Steamworks.Ugc types weren't JIT-able, causing 0 mods to load — now falls back to a reflection-only local loader on those platforms.",
+      "version": "1.0.4",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/not-enough-workshop-mods/WorkshopUnlock.dll",
-      "sha256": "b101c9ade4bf82a0de40f379e3e0cd887d7ab5d8b581093cadf874fe091edf91",
-      "size_bytes": 20992,
+      "sha256": "249d6fa2a8d11ae3a1ab506e82fbf3f006d96ab9457c9f8e8f5126730d0aba19",
+      "size_bytes": 23552,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/not-enough-workshop-mods",
       "category": "fixes"
     },
