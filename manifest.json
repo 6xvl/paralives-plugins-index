@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-31T18:00:00Z",
+  "updated": "2026-05-31T20:00:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -69,11 +69,11 @@
       "id": "6ix.WorkshopUnlock",
       "name": "Not Enough Workshop Mods",
       "author": "6ix",
-      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Also loads your downloaded Workshop mods when Steam is offline (vanilla would skip them). v1.0.7 adds lazy Steamworks type resolution so Mac/Linux gets the full Steam multi-page fetch (Facepunch.Steamworks.Posix wasn't loaded at plugin Awake time, but is by the time the method is called).",
-      "version": "1.0.7",
+      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Also loads your downloaded Workshop mods when Steam is offline (vanilla would skip them). v1.0.8 fixes a TargetParameterCountException on some Paralives builds where GetPageAsync takes more than one parameter (older Facepunch.Steamworks versions) — invoke args are now built dynamically from the actual method signature.",
+      "version": "1.0.8",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/not-enough-workshop-mods/WorkshopUnlock.dll",
-      "sha256": "ebd3a97fa0edb64f06633edc2fb75e85dac63ba46d656d1f50bcf23139873ccf",
-      "size_bytes": 26624,
+      "sha256": "073f134a5dec2391278ec62890f30248cfe4356c1e6858e3179853fc1b7e2a4c",
+      "size_bytes": 27136,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/not-enough-workshop-mods",
       "category": "fixes"
     },
