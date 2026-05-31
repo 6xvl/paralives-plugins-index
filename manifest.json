@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-31T21:00:00Z",
+  "updated": "2026-05-31T22:00:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -69,11 +69,11 @@
       "id": "6ix.WorkshopUnlock",
       "name": "Not Enough Workshop Mods",
       "author": "6ix",
-      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Also loads your downloaded Workshop mods when Steam is offline (vanilla would skip them). v1.0.9 adds diagnostic logging of the exact GetPageAsync signature found and args used, and searches DeclaredOnly first to avoid picking up interface method stubs with wrong parameter counts.",
-      "version": "1.0.9",
+      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. Default safety cap is 15,000 mods — raise it in the cfg if you somehow have more. Also loads your downloaded Workshop mods when Steam is offline (vanilla would skip them). v1.0.10 fixes compatibility with older Facepunch.Steamworks builds (shipped with some Paralives installations) where WhereUserSubscribed takes an optional SteamId parameter — previously caused a TargetParameterCountException and fell back to offline mode.",
+      "version": "1.0.10",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/not-enough-workshop-mods/WorkshopUnlock.dll",
-      "sha256": "74a48755b505be91ebe38d3402ac4944b13e2b50582996231eefa53a66e3ad64",
-      "size_bytes": 28160,
+      "sha256": "d49857d54ddb45b2d3b8f14cdd1900a869f668e5454a0bea318377afa9e7dcf0",
+      "size_bytes": 28672,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/not-enough-workshop-mods",
       "category": "fixes"
     },
