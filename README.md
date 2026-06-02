@@ -2,50 +2,79 @@
 
 Browse and install community mods for [Paralives](https://store.steampowered.com/app/1118520/Paralives/) from inside the game. No manual file copying after the first install.
 
+> **Need help?** Join the **[Discord](https://discord.gg/XMXRPTDJv5)** → find the **mods** channel → open the **`[Plugin Hub] Help`** thread inside it.
+
 ---
 
-## Quick install
+## Install
 
-**[⬇ Download the modpack zip — latest release](https://github.com/6xvl/paralives-plugins-index/releases/latest)** (1.1 MB)
+**[⬇ Download the modpack zip](https://github.com/6xvl/paralives-plugins-index/releases/latest)** (1.2 MB)
 
-1. **Find your Paralives folder.** Steam → right-click **Paralives** → **Manage** → **Browse local files**. You should see `Paralives.exe` inside.
-2. **Extract the zip into that folder.** Right-click the downloaded `6ix-paralives-modpack.zip` → **Extract All…** → pick your Paralives folder. After it finishes, `winhttp.dll` should sit next to `Paralives.exe` and a `BepInEx` folder should appear beside it.
-3. **Launch the game.** Click **Mods** on the main menu — you'll see a new **Plugin Hub** tab next to *Control Panel*. Click it to browse, install, and toggle mods.
+Same three steps on every system: **unzip it into your game folder → start the game → open Mods → Plugin Hub.** Pick yours below.
 
-That's it. Everything in the zip is set up to run on first launch.
+### Windows
 
-### Linux / Steam Deck (Proton)
+1. **Open your Paralives folder.** In Steam, right-click **Paralives** → **Manage** → **Browse local files**. A window opens with `Paralives.exe` in it.
+2. **Unzip the download into that folder.** Right-click `6ix-paralives-modpack.zip` → **Extract All…** → choose that folder. You're done when `winhttp.dll` is sitting right next to `Paralives.exe`.
+3. **Start the game.** On the main menu click **Mods** — there's a new **Plugin Hub** tab. Open it to browse and install mods.
 
-Paralives runs under Proton. One extra step is required because Proton's Wine ships its own `winhttp.dll` that shadows ours unless you tell Wine to use the native (game folder) copy.
+That's it. ✅
 
-**Easiest — Steam Launch Options (no protontricks needed):**
+### Steam Deck / Linux
 
-1. Right-click **Paralives** in your Steam library → **Properties**
-2. Paste this into the **Launch Options** box:
+Same as Windows, plus **one line to paste**:
+
+1. Open your Paralives folder and unzip the download into it (Windows steps 1–2 above).
+2. In Steam, right-click **Paralives** → **Properties** → **Launch Options**, and paste this into the box:
 
    ```
    WINEDLLOVERRIDES="winhttp=n,b" %command%
    ```
 
-3. Close the properties dialog and launch the game normally.
+3. Start the game, then open **Mods → Plugin Hub**.
 
-`n,b` = "native first, then builtin" — Wine uses our `winhttp.dll` (BepInEx) and falls back to its own if missing. Works on Proton (Steam Deck + desktop), no permanent prefix modification.
+That line just tells Steam to load the mods from the zip. To undo it later, empty the box. ✅
 
-**Alternative — protontricks (modifies the prefix permanently):**
+<details>
+<summary>Prefer protontricks?</summary>
 
 ```bash
 protontricks 1118520 winetricks --force --no-isolate winhttp=n,b
 ```
 
-`1118520` is Paralives' Steam App ID. Either approach works; the launch-options route is simpler and easier to undo.
+`1118520` is Paralives' Steam ID. The launch-option method above is simpler and easier to undo. Tested with default Proton — thanks @maxtron95 + @seajr.
+</details>
 
-Verified working on Linux: extraction with KDE Ark (right-click → Extract Here), launching via Steam with default Proton. Credit @maxtron95 + @seajr for the recipe.
+### Mac
+
+Everything's already in the zip — you just paste **two short commands**.
+
+1. **Open your Paralives folder.** In Steam, right-click **Paralives** → **Manage** → **Browse local files**. You'll see `Paralives.app`.
+2. **Unzip the download into that folder**, so `run_bepinex.sh` lands next to `Paralives.app`.
+3. **Open Terminal in that folder**, then copy-paste these two lines, pressing Enter after each:
+
+   ```bash
+   chmod +x run_bepinex.sh
+   xattr -dr com.apple.quarantine .
+   ```
+
+   These just let Mac run the loader — it's blocked by default because you downloaded it.
+4. **Tell Steam to use it.** Right-click **Paralives** → **Properties** → **Launch Options**, and paste the full path to the script, a space, then `%command%`. To get the exact path, type `pwd` in the Terminal from step 3 and add `/run_bepinex.sh`:
+
+   ```
+   "/Users/YOU/Library/Application Support/Steam/steamapps/common/Paralives/run_bepinex.sh" %command%
+   ```
+
+5. **Start the game**, then open **Mods → Plugin Hub**.
+
+> Mac support is new — if Plugin Hub doesn't show up, ask in the [Discord](https://discord.gg/XMXRPTDJv5) and we'll help.
 
 ### What's in the bundle
 
 | File | Purpose |
 |---|---|
-| `winhttp.dll` + `doorstop_config.ini` | [BepInEx 5](https://github.com/BepInEx/BepInEx) (forked) — the mod loader Paralives uses (MIT). |
+| `winhttp.dll` + `doorstop_config.ini` | [BepInEx 5](https://github.com/BepInEx/BepInEx) (forked) — the mod loader Paralives uses on Windows / Proton (MIT). |
+| `run_bepinex.sh` + `libdoorstop.dylib` | macOS BepInEx loader (Doorstop 4.5.0), preconfigured. Windows/Linux ignore these; macOS uses them instead of `winhttp.dll`. |
 | `BepInEx/core/*` | BepInEx runtime + HarmonyX/MonoMod patching libraries. |
 | `BepInEx/patchers/PluginHubUpdater.dll` | Tiny pre-load updater — fetches the manifest at boot, replaces any installed plugin whose on-disk hash differs from the latest, then hands off to the chainloader. Updates apply on the same launch, no second restart. |
 | `BepInEx/plugins/PluginHub.dll` | This project — the in-game browser. |
@@ -59,7 +88,7 @@ After the initial install, Plugin Hub auto-updates itself and all installed mods
 
 ### Uninstall
 
-Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepInEx` folder from your Paralives folder. The game returns to vanilla.
+Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepInEx` folder from your Paralives folder. The game returns to vanilla. On macOS, delete `run_bepinex.sh`, `libdoorstop.dylib`, and the `BepInEx` folder, and clear the Steam Launch Options.
 
 ### Verify the download
 
@@ -67,7 +96,7 @@ Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepIn
 Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
 ```
 
-Expected: `86ed987496be9b4b982b0be3654fc011e1a0e225f98000187d1289bfa1df2122`
+Expected: `549f269d0f6df79d21b7aed88873ed9f5f23c6304d5a8232080050ba312f9761`
 
 ---
 
