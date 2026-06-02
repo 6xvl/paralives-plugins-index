@@ -130,7 +130,7 @@ You don't have to — Plugin Hub already checks everything automatically. But if
 Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
 ```
 
-It should print `7f6cde21163dd703c47d99b906290eb0adc13c924782922df18046ae87b16f0c`.
+It should print `c0293d5a91984809be6835d3c25b6a4deb609046134d8c67a41f6166ce463acb`.
 </details>
 
 ---
