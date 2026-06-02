@@ -47,11 +47,15 @@ protontricks 1118520 winetricks --force --no-isolate winhttp=n,b
 
 ### Mac
 
-Everything's already in the zip — you just paste **three short commands**.
+Everything's already in the zip — you just point Terminal at the folder, then paste three short commands.
 
 1. **Open your Paralives folder.** In Steam, right-click **Paralives** → **Manage** → **Browse local files**. You'll see `Paralives.app`.
 2. **Unzip the download into that folder**, so `run_bepinex.sh` lands next to `Paralives.app`.
-3. **Open Terminal in that folder**, then copy-paste these three lines, pressing Enter after each:
+3. **Point Terminal at that folder — this is the step everyone gets wrong.** If you just open Terminal and paste the commands, it says *"No such file or directory"* — because Terminal starts in your **home** folder, not the game folder, even though you can see the file sitting right there in Finder. Do this:
+   - Open **Terminal** (press `Cmd + Space`, type `Terminal`, press Enter).
+   - Type `cd` and then **one space** — *don't press Enter yet* — then **drag the Paralives folder from Finder into the Terminal window** and let go. It fills in the path for you. **Now** press Enter.
+   - Type `ls` and press Enter. You should see `run_bepinex.sh` and `Paralives.app` in the list — that confirms you're in the right place.
+4. **Now paste these three lines, pressing Enter after each:**
 
    ```bash
    chmod +x run_bepinex.sh
@@ -60,13 +64,13 @@ Everything's already in the zip — you just paste **three short commands**.
    ```
 
    Line 1 makes the loader runnable, line 2 clears the "downloaded from the internet" block, and line 3 lets the loader attach to the game — macOS blocks this on signed apps by default (it's the same step the community [`gib`](https://github.com/toebeann/gib) installer does).
-4. **Tell Steam to use it.** Right-click **Paralives** → **Properties** → **Launch Options**, and paste the full path to the script, a space, then `%command%`. To get the exact path, type `pwd` in the Terminal from step 3 and add `/run_bepinex.sh`:
+5. **Tell Steam to use it.** Right-click **Paralives** → **Properties** → **Launch Options**, and paste the full path to the script, a space, then `%command%`. To get the exact path, type `pwd` in the same Terminal and add `/run_bepinex.sh`:
 
    ```
    "/Users/YOU/Library/Application Support/Steam/steamapps/common/Paralives/run_bepinex.sh" %command%
    ```
 
-5. **Start the game**, then open **Mods → Plugin Hub**.
+6. **Start the game**, then open **Mods → Plugin Hub**.
 
 > Mac support is experimental — if Plugin Hub doesn't show up, ask in the [Discord](https://discord.gg/XMXRPTDJv5) and we'll help.
 
