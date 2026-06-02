@@ -90,14 +90,6 @@ After the initial install, Plugin Hub auto-updates itself and all installed mods
 
 Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepInEx` folder from your Paralives folder. The game returns to vanilla. On macOS, delete `run_bepinex.sh`, `libdoorstop.dylib`, and the `BepInEx` folder, and clear the Steam Launch Options.
 
-### Verify the download
-
-```powershell
-Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
-```
-
-Expected: `549f269d0f6df79d21b7aed88873ed9f5f23c6304d5a8232080050ba312f9761`
-
 ---
 
 ## Available mods
@@ -127,6 +119,18 @@ Hover any mod card in Plugin Hub for the same description in-game. More on the w
 - **Hash verification on every download.** If a file doesn't match the manifest hash, it's rejected and nothing is written.
 - **No telemetry, no analytics, no calling home.** Plugin Hub only connects to GitHub to fetch the manifest and the DLLs you explicitly click on.
 - **Auditable.** Every mod's source, the loader, and the manifest are all in this repo.
+
+<details>
+<summary>Want to double-check the download yourself? (optional — for the technical)</summary>
+
+You don't have to — Plugin Hub already checks everything automatically. But if you'd like to confirm the zip is exactly what we published, paste this into PowerShell:
+
+```powershell
+Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
+```
+
+It should print `549f269d0f6df79d21b7aed88873ed9f5f23c6304d5a8232080050ba312f9761`.
+</details>
 
 ---
 
