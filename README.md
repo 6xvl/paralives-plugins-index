@@ -47,18 +47,19 @@ protontricks 1118520 winetricks --force --no-isolate winhttp=n,b
 
 ### Mac
 
-Everything's already in the zip — you just paste **two short commands**.
+Everything's already in the zip — you just paste **three short commands**.
 
 1. **Open your Paralives folder.** In Steam, right-click **Paralives** → **Manage** → **Browse local files**. You'll see `Paralives.app`.
 2. **Unzip the download into that folder**, so `run_bepinex.sh` lands next to `Paralives.app`.
-3. **Open Terminal in that folder**, then copy-paste these two lines, pressing Enter after each:
+3. **Open Terminal in that folder**, then copy-paste these three lines, pressing Enter after each:
 
    ```bash
    chmod +x run_bepinex.sh
    xattr -dr com.apple.quarantine .
+   codesign --remove-signature Paralives.app
    ```
 
-   These just let Mac run the loader — it's blocked by default because you downloaded it.
+   Line 1 makes the loader runnable, line 2 clears the "downloaded from the internet" block, and line 3 lets the loader attach to the game — macOS blocks this on signed apps by default (it's the same step the community [`gib`](https://github.com/toebeann/gib) installer does).
 4. **Tell Steam to use it.** Right-click **Paralives** → **Properties** → **Launch Options**, and paste the full path to the script, a space, then `%command%`. To get the exact path, type `pwd` in the Terminal from step 3 and add `/run_bepinex.sh`:
 
    ```
@@ -67,7 +68,7 @@ Everything's already in the zip — you just paste **two short commands**.
 
 5. **Start the game**, then open **Mods → Plugin Hub**.
 
-> Mac support is new — if Plugin Hub doesn't show up, ask in the [Discord](https://discord.gg/XMXRPTDJv5) and we'll help.
+> Mac support is experimental — if Plugin Hub doesn't show up, ask in the [Discord](https://discord.gg/XMXRPTDJv5) and we'll help.
 
 ### What's in the bundle
 
@@ -129,7 +130,7 @@ You don't have to — Plugin Hub already checks everything automatically. But if
 Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
 ```
 
-It should print `549f269d0f6df79d21b7aed88873ed9f5f23c6304d5a8232080050ba312f9761`.
+It should print `7f6cde21163dd703c47d99b906290eb0adc13c924782922df18046ae87b16f0c`.
 </details>
 
 ---
