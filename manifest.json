@@ -81,7 +81,7 @@
       "id": "6ix.StopReimporting",
       "name": "Stop Reimporting My Mods",
       "author": "6ix",
-      "description": "Stops broken or outdated mods from freezing the loading screen, softlocking a save, or making your other mods silently fail to show up. When a mod fails — a broken/missing package, an asset that throws or hangs during reimport, or a corrupt placed item in a save — it's skipped for that session and named in the log, then tried again next launch (so a one-off failure never locks a mod out). v1.0.7 adds a save-load guard that identifies the exact Workshop item softlocking a save, a fix for a recurring boot-time crash, and full stack-trace logging. Includes the per-asset guard, the package-load guard, and the async reimport watchdog as a final safety net.",
+      "description": "Keeps one broken or out-of-date mod from breaking your whole game. If a mod won't load, gets the game stuck on the 'Reimporting Assets' loading screen, or freezes your save, the game now skips just that one mod (or that one piece of CC) and keeps going — and notes which one caused it so you know what to update or remove. It tries the mod again next time you launch, so a mod that was only having a bad moment (like still downloading) isn't switched off for good.",
       "version": "1.0.7",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/stop-reimporting/StopReimporting.dll",
       "sha256": "4cf1f145bd407ad582b1b7a726b4bc9e91368f95ec92fbf1d67f28a922b1b473",
