@@ -44,8 +44,4 @@ If you're not using the 6ix Plugin Hub:
 
 ## Verification
 
-SHA256 of the v1.0.1 DLL:
-```
-215e8a9dc114bfa53b7bf94e6c465c4645cb220527c2a99da1a81f3dea00061f
-```
-PowerShell: `Get-FileHash -Algorithm SHA256 .\WorkshopUnlock.dll`
+The current version and SHA256 are in [`manifest.json`](https://github.com/6xvl/paralives-plugins-index/blob/main/manifest.json) (entry `6ix.WorkshopUnlock`) — the single source of truth. Plugin Hub verifies every download against that hash automatically. To check a manual download, run `Get-FileHash -Algorithm SHA256 .\WorkshopUnlock.dll` and compare it to the manifest.

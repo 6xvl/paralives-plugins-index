@@ -81,11 +81,13 @@ Everything's already in the zip — you just point Terminal at the folder, then 
 | `winhttp.dll` + `doorstop_config.ini` | [BepInEx 5](https://github.com/BepInEx/BepInEx) (forked) — the mod loader Paralives uses on Windows / Proton (MIT). |
 | `run_bepinex.sh` + `libdoorstop.dylib` | macOS BepInEx loader (Doorstop 4.5.0), preconfigured. Windows/Linux ignore these; macOS uses them instead of `winhttp.dll`. |
 | `BepInEx/core/*` | BepInEx runtime + HarmonyX/MonoMod patching libraries. |
-| `BepInEx/patchers/PluginHubUpdater.dll` | Tiny pre-load updater — fetches the manifest at boot, replaces any installed plugin whose on-disk hash differs from the latest, then hands off to the chainloader. Updates apply on the same launch, no second restart. |
-| `BepInEx/plugins/PluginHub.dll` | This project — the in-game browser. |
+| `BepInEx/plugins/PluginHub.dll` | This project — the in-game browser. It also self-updates and updates your installed mods on each launch: reads `manifest.json`, downloads any newer DLLs, verifies them against the manifest hash, and applies them. |
+| `BepInEx/plugins/CrossVolumeWriteFix.dll` | Fixes the Paralives 0.1.2 cross-drive Workshop/save write bug (Win32 error 1176). |
+| `BepInEx/plugins/WorkshopUnlock.dll` | "Not Enough Workshop Mods" — fixes the Steam Workshop 50-mod cap. |
+| `BepInEx/plugins/StopReimporting.dll` | Stops a broken/outdated mod from freezing the loading screen or softlocking a save. |
 | `BepInEx/plugins/StatsOverlay.dll` | F3 stats panel — useful for spotting performance issues. |
 
-Other mods (Menu FPS Limiter, Not Enough Workshop Mods, anything else listed below) install from inside the Plugin Hub UI in one click — they're not pre-bundled so first-launch is minimal.
+Only **Menu FPS Limiter** isn't pre-bundled — install it from inside the Plugin Hub UI in one click.
 
 ### Updating
 
@@ -103,8 +105,10 @@ Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepIn
 |---|---|---|---|
 | Tools | **Plugin Hub** | ✅ pre-installed | Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch. Also fixes the Steam-offline boot hang so the game launches without internet. |
 | Tools | **Stats Overlay** | ✅ pre-installed | Unity-Editor-style stats panel — FPS, CPU/render times, draw calls, triangles, audio level, animation counts. Top-left overlay. Press F3 to toggle. |
+| Fixes | **Cross-Volume Write Fix** | ✅ pre-installed | Fixes a Paralives 0.1.2 regression that breaks Workshop mod loading (and some save writes) when your Steam library is on a different drive than Windows `%TEMP%` (Win32 error 1176). |
+| Fixes | **Not Enough Workshop Mods** | ✅ pre-installed | Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get **deleted** from your computer on game launch. |
+| Fixes | **Stop Reimporting My Mods** | ✅ pre-installed | Stops a broken or outdated mod from freezing the "Reimporting Assets" loading screen or softlocking a save. The bad mod is skipped for the session and named in the log, then retried next launch. |
 | Performance | **Menu FPS Limiter** | install from Hub | Caps the frame rate at 60 in the main menu and 30 when the window isn't focused (alt-tab). Gameplay runs uncapped by default. Stops your fans screaming while the menu sits at 200+ fps doing nothing. |
-| Fixes | **Not Enough Workshop Mods** | install from Hub | Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get **deleted** from your computer on game launch. Install if you use Workshop. |
 
 Hover any mod card in Plugin Hub for the same description in-game. More on the way — open a PR to add yours, see [Contributing](#contributing).
 
@@ -134,7 +138,7 @@ You don't have to — Plugin Hub already checks everything automatically. But if
 Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
 ```
 
-It should print `c0293d5a91984809be6835d3c25b6a4deb609046134d8c67a41f6166ce463acb`.
+It should print `89829e0727b19b7b5514f84c4fdb5e738b42b7b9c7f21f9aa872562f8073f326`.
 </details>
 
 ---

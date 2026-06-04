@@ -64,11 +64,7 @@ If you're not using the 6ix Plugin Hub:
 
 ## Verification
 
-SHA256 of the v1.0.4 DLL:
-```
-e7784f55a3758d1a863a8e80b2dc76e417f1eebc0743da93b0be8455f5ace89f
-```
-PowerShell: `Get-FileHash -Algorithm SHA256 .\StatsOverlay.dll`
+The current version and SHA256 are in [`manifest.json`](https://github.com/6xvl/paralives-plugins-index/blob/main/manifest.json) (entry `6ix.StatsOverlay`) — the single source of truth. Plugin Hub verifies every download against that hash automatically. To check a manual download, run `Get-FileHash -Algorithm SHA256 .\StatsOverlay.dll` and compare it to the manifest.
 
 ## Heads up
 

@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-05-31T23:59:00Z",
+  "updated": "2026-06-04T22:41:45Z",
   "categories": [
     {
       "id": "fixes",
@@ -81,11 +81,11 @@
       "id": "6ix.StopReimporting",
       "name": "Stop Reimporting My Mods",
       "author": "6ix",
-      "description": "Stops a single broken mod from freezing the loading screen OR making your other mods silently fail to show up. v1.0.5 adds two fixes: (1) the per-asset guard now covers every asset type's Reimport (mesh, texture, deformation map, etc.) — previously only the base method was guarded, so a corrupt mesh would hang the 'Reimporting Assets' screen until a 90s timeout; now it's skipped instantly. (2) A package-load guard: if one mod fails to load (e.g. a missing settings file), it's skipped so the REST of your mods still load — fixing the 'my workshop mods aren't showing' case where one bad mod aborted loading for all of them. Skipped mods are tagged (Skipped)/(Partial) in My Mods. Includes the v1.0.3 async watchdog as a final safety net.",
-      "version": "1.0.6",
+      "description": "Stops broken or outdated mods from freezing the loading screen, softlocking a save, or making your other mods silently fail to show up. When a mod fails — a broken/missing package, an asset that throws or hangs during reimport, or a corrupt placed item in a save — it's skipped for that session and named in the log, then tried again next launch (so a one-off failure never locks a mod out). v1.0.7 adds a save-load guard that identifies the exact Workshop item softlocking a save, a fix for a recurring boot-time crash, and full stack-trace logging. Includes the per-asset guard, the package-load guard, and the async reimport watchdog as a final safety net.",
+      "version": "1.0.7",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/stop-reimporting/StopReimporting.dll",
-      "sha256": "4912d8fa65438c2128d84d384a22e9d728fe56d73d09488974340362f6b86c1b",
-      "size_bytes": 21504,
+      "sha256": "4cf1f145bd407ad582b1b7a726b4bc9e91368f95ec92fbf1d67f28a922b1b473",
+      "size_bytes": 30208,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/stop-reimporting",
       "category": "fixes"
     },

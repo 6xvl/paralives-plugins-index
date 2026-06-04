@@ -86,6 +86,6 @@ No configuration needed — the patch is on by default and self-disables if the 
 
 ## Credits
 
-Bug analysis: see [Paralives 0.1.2 Patch Audit](https://github.com/6xvl/paralives-plugins-index) — the 0.1.2 patch added the new atomic helper. The cross-volume failure mode was predicted in the audit before it was observed in the wild.
+Bug analysis: the Paralives 0.1.2 patch added the new atomic-write helper shown above; the cross-volume failure mode (Win32 1176) was predicted from the code before it was observed in the wild.
 
 License: MIT.
