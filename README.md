@@ -82,9 +82,9 @@ Everything's already in the zip — you just point Terminal at the folder, then 
 | `run_bepinex.sh` + `libdoorstop.dylib` | macOS BepInEx loader (Doorstop 4.5.0), preconfigured. Windows/Linux ignore these; macOS uses them instead of `winhttp.dll`. |
 | `BepInEx/core/*` | BepInEx runtime + HarmonyX/MonoMod patching libraries. |
 | `BepInEx/plugins/PluginHub.dll` | This project — the in-game browser. It also self-updates and updates your installed mods on each launch: reads `manifest.json`, downloads any newer DLLs, verifies them against the manifest hash, and applies them. |
-| `BepInEx/plugins/CrossVolumeWriteFix.dll` | Fixes the Paralives 0.1.2 cross-drive Workshop/save write bug (Win32 error 1176). |
 | `BepInEx/plugins/WorkshopUnlock.dll` | "Not Enough Workshop Mods" — fixes the Steam Workshop 50-mod cap. |
-| `BepInEx/plugins/StopReimporting.dll` | Stops a broken/outdated mod from freezing the loading screen or softlocking a save. |
+| `BepInEx/plugins/StopReimporting.dll` | "FixMyReimport" — keeps one broken/outdated mod from freezing the loading screen or your save. (The file keeps its old name so it updates in place.) |
+| `BepInEx/plugins/WhatIsMyLoadingDoing.dll` | Shows what the game is loading on the loading screen, and names the exact item if it gets stuck. |
 | `BepInEx/plugins/StatsOverlay.dll` | F3 stats panel — useful for spotting performance issues. |
 
 Only **Menu FPS Limiter** isn't pre-bundled — install it from inside the Plugin Hub UI in one click.
@@ -105,9 +105,9 @@ Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepIn
 |---|---|---|---|
 | Tools | **Plugin Hub** | ✅ pre-installed | Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch. Also fixes the Steam-offline boot hang so the game launches without internet. |
 | Tools | **Stats Overlay** | ✅ pre-installed | Unity-Editor-style stats panel — FPS, CPU/render times, draw calls, triangles, audio level, animation counts. Top-left overlay. Press F3 to toggle. |
-| Fixes | **Cross-Volume Write Fix** | ✅ pre-installed | Fixes a Paralives 0.1.2 regression that breaks Workshop mod loading (and some save writes) when your Steam library is on a different drive than Windows `%TEMP%` (Win32 error 1176). |
+| Tools | **What Is My Loading Doing** | ✅ pre-installed | Shows what the game is doing on the loading screen ("Loading furniture 142/300", "Loading characters"…) instead of just a spinning icon, and names the exact item if a load gets stuck. |
 | Fixes | **Not Enough Workshop Mods** | ✅ pre-installed | Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get **deleted** from your computer on game launch. |
-| Fixes | **Stop Reimporting My Mods** | ✅ pre-installed | Stops a broken or outdated mod from freezing the "Reimporting Assets" loading screen or softlocking a save. The bad mod is skipped for the session and named in the log, then retried next launch. |
+| Fixes | **FixMyReimport** | ✅ pre-installed | Keeps one broken or outdated mod from freezing the "Reimporting Assets" loading screen or your save. It skips just that mod for the session, tells you which one, and tries it again next launch. |
 | Performance | **Menu FPS Limiter** | install from Hub | Caps the frame rate at 60 in the main menu and 30 when the window isn't focused (alt-tab). Gameplay runs uncapped by default. Stops your fans screaming while the menu sits at 200+ fps doing nothing. |
 
 Hover any mod card in Plugin Hub for the same description in-game. More on the way — open a PR to add yours, see [Contributing](#contributing).
@@ -138,7 +138,7 @@ You don't have to — Plugin Hub already checks everything automatically. But if
 Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
 ```
 
-It should print `89829e0727b19b7b5514f84c4fdb5e738b42b7b9c7f21f9aa872562f8073f326`.
+It should print `fe5c02a70d1e6c678e9166e5841f0fe0811ae6065a7a26ded967a185830b05e5`.
 </details>
 
 ---

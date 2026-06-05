@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-06-04T22:41:45Z",
+  "updated": "2026-06-05T02:47:46Z",
   "categories": [
     {
       "id": "fixes",
@@ -35,22 +35,6 @@
   ],
   "plugins": [
     {
-      "id": "6ix.CrossVolumeWriteFix",
-      "name": "Cross-Volume Write Fix (0.1.2)",
-      "author": "6ix",
-      "description": "Fixes a Paralives 0.1.2 regression that breaks Workshop mod loading (and some save writes) when your Steam library is on a different drive than Windows %TEMP%. The devs' new atomic-write helper uses Path.GetTempFileName() (under %TEMP%) + File.Replace, which throws Win32 error 1176 (ERROR_UNABLE_TO_MOVE_REPLACEMENT) cross-volume. This patch routes the temp file to the same directory as the destination so File.Replace works. Install if you see 'IOException: Win32 IO returned 1176' in your BepInEx log, or if Workshop mods stopped loading after 0.1.2.",
-      "version": "1.0.0",
-      "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/cross-volume-write-fix/CrossVolumeWriteFix.dll",
-      "sha256": "39fb8e1cce2a82529c843b7ed3c4ff5cda6393444f8a3d8f44d1e3c9557ef03f",
-      "size_bytes": 9216,
-      "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/cross-volume-write-fix",
-      "category": "fixes",
-      "min_game_version": 0,
-      "max_game_version": 0,
-      "discontinued": false,
-      "default_install": true
-    },
-    {
       "id": "6ix.PluginHub",
       "name": "Plugin Hub",
       "author": "6ix",
@@ -79,13 +63,13 @@
     },
     {
       "id": "6ix.StopReimporting",
-      "name": "Stop Reimporting My Mods",
+      "name": "FixMyReimport",
       "author": "6ix",
-      "description": "Keeps one broken or out-of-date mod from breaking your whole game. If a mod won't load, gets the game stuck on the 'Reimporting Assets' loading screen, or freezes your save, the game now skips just that one mod (or that one piece of CC) and keeps going — and notes which one caused it so you know what to update or remove. It tries the mod again next time you launch, so a mod that was only having a bad moment (like still downloading) isn't switched off for good.",
-      "version": "1.0.7",
+      "description": "Keeps one broken or out-of-date mod from breaking your whole game. If a mod won't load, gets the game stuck on the 'Reimporting Assets' loading screen, or freezes your save, the game just skips that one mod (or that one piece of CC) and keeps going — and notes which one caused it so you know what to update or remove. It tries the mod again next time you launch, so a mod that was only having a bad moment (like still downloading) isn't switched off for good.",
+      "version": "1.0.8",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/stop-reimporting/StopReimporting.dll",
-      "sha256": "4cf1f145bd407ad582b1b7a726b4bc9e91368f95ec92fbf1d67f28a922b1b473",
-      "size_bytes": 30208,
+      "sha256": "26202f2ca657144e721248ef093b33671b9c8fc57d53ce728b279cf83b9d3703",
+      "size_bytes": 32256,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/stop-reimporting",
       "category": "fixes"
     },
@@ -111,6 +95,18 @@
       "sha256": "296d1773d48b89ed939047aaff626595a790c5d3ca7c3d30760010fbac16c4ef",
       "size_bytes": 17920,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/tools/stats-overlay",
+      "category": "tools"
+    },
+    {
+      "id": "6ix.WhatIsMyLoadingDoing",
+      "name": "What Is My Loading Doing",
+      "author": "6ix",
+      "description": "Shows you what the game is actually doing on the loading screen — like 'Loading furniture (142/300)', 'Loading characters', or 'Building terrain' — instead of just a spinning icon. If a load ever gets stuck, it tells you exactly which Workshop item caused it, so you know what to remove.",
+      "version": "1.0.0",
+      "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/tools/what-is-my-loading-doing/WhatIsMyLoadingDoing.dll",
+      "sha256": "96d23f929739d10bcf077684ff8b7acfbbbb76241aaf327076787bb65e73444c",
+      "size_bytes": 23552,
+      "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/tools/what-is-my-loading-doing",
       "category": "tools"
     }
   ]
