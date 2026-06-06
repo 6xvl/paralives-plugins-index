@@ -1,5 +1,18 @@
 # 6ix Plugin Hub — Paralives mods
 
+<p align="center">
+  <a href="https://www.patreon.com/6xvl"><img src="https://img.shields.io/badge/%E2%9D%A4%20Support%20this%20project-on%20Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white" alt="Support this project on Patreon — keep it from being discontinued"></a>
+  <a href="https://ko-fi.com/6xvls"><img src="https://img.shields.io/badge/or%20buy%20me%20a-Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Support this project on Ko-fi"></a>
+  <a href="https://github.com/6xvl/paralives-plugins-index/releases/latest"><img src="https://img.shields.io/github/v/release/6xvl/paralives-plugins-index?style=for-the-badge&label=Download&color=2ea44f&logo=github&logoColor=white" alt="Download the latest release"></a>
+  <a href="https://discord.gg/XMXRPTDJv5"><img src="https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join the Discord"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/6xvl/paralives-plugins-index/releases"><img src="https://img.shields.io/github/downloads/6xvl/paralives-plugins-index/total?style=for-the-badge&label=Downloads&color=4c1&logo=github&logoColor=white" alt="Total downloads"></a>
+  <a href="https://github.com/6xvl/paralives-plugins-index/stargazers"><img src="https://img.shields.io/github/stars/6xvl/paralives-plugins-index?style=for-the-badge&label=Stars&color=f9c513&logo=github&logoColor=white" alt="GitHub stars"></a>
+  <a href="https://store.steampowered.com/app/1118520/Paralives/"><img src="https://img.shields.io/badge/Game-Paralives-1b2838?style=for-the-badge&logo=steam&logoColor=white" alt="For Paralives on Steam"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/6xvl/paralives-plugins-index?style=for-the-badge&label=License&color=lightgrey" alt="License: MIT"></a>
+</p>
+
 Browse and install community mods for [Paralives](https://store.steampowered.com/app/1118520/Paralives/) from inside the game. No manual file copying after the first install.
 
 > **Need help?** Join the **[Discord](https://discord.gg/XMXRPTDJv5)** → find the **mods** channel → open the **`[Plugin Hub] Help`** thread inside it.
@@ -164,9 +177,19 @@ Get-FileHash -Algorithm SHA256 .\YourPlugin.dll
 
 ## Support
 
-If Plugin Hub or any of these mods make your Paralives experience better, consider supporting on **[Patreon](https://www.patreon.com/6xvl)**. Goes directly toward more mods + maintenance time.
+If Plugin Hub or any of these mods make your Paralives experience better, consider supporting on **[Patreon](https://www.patreon.com/6xvl)** or **[Ko-fi](https://ko-fi.com/6xvls)**. Goes directly toward more mods + maintenance time.
 
-The blue **Support this project** button in the Plugin Hub UI links to the same page.
+The blue **Support this project** button in the Plugin Hub UI links to the Patreon page.
+
+---
+
+## Star History
+
+A ⭐ keeps the project visible — and keeps it going.
+
+<a href="https://star-history.com/#6xvl/paralives-plugins-index&Date">
+  <img src="https://api.star-history.com/svg?repos=6xvl/paralives-plugins-index&type=Date" alt="Star History Chart" width="600">
+</a>
 
 ---
 
