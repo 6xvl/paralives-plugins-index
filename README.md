@@ -27,6 +27,11 @@
   <a href="LICENSE"><img src="https://img.shields.io/github/license/6xvl/paralives-plugins-index?style=for-the-badge&label=License&color=lightgrey&labelColor=1a1a2e" alt="License: MIT"></a>
 </p>
 
+<!-- ── Star history ── -->
+<p align="center">
+  <a href="https://star-history.com/#6xvl/paralives-plugins-index&Date"><img src="https://api.star-history.com/svg?repos=6xvl/paralives-plugins-index&type=Date" alt="Star History Chart" width="600"></a>
+</p>
+
 Browse and install community mods for [Paralives](https://store.steampowered.com/app/1118520/Paralives/) from inside the game. No manual file copying after the first install.
 
 > **Need help?** Join the **[Discord](https://discord.gg/XMXRPTDJv5)** → find the **mods** channel → open the **`[Plugin Hub] Help`** thread inside it.
@@ -194,16 +199,6 @@ Get-FileHash -Algorithm SHA256 .\YourPlugin.dll
 If Plugin Hub or any of these mods make your Paralives experience better, consider supporting on **[Patreon](https://www.patreon.com/6xvl)** or **[Ko-fi](https://ko-fi.com/6xvls)**. Goes directly toward more mods + maintenance time.
 
 The blue **Support this project** button in the Plugin Hub UI links to the Patreon page.
-
----
-
-## Star History
-
-A ⭐ keeps the project visible — and keeps it going.
-
-<a href="https://star-history.com/#6xvl/paralives-plugins-index&Date">
-  <img src="https://api.star-history.com/svg?repos=6xvl/paralives-plugins-index&type=Date" alt="Star History Chart" width="600">
-</a>
 
 ---
 
