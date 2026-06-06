@@ -1,4 +1,6 @@
-# 6ix Plugin Hub — Paralives mods
+<p align="center">
+  <img src="assets/hub-banner.png" alt="6ix Plugin Hub — one-click mods, right inside Paralives" width="100%">
+</p>
 
 <!-- ── Support (keep the project alive) ── -->
 <p align="center">
