@@ -53,14 +53,14 @@
       "id": "6ix.WorkshopUnlock",
       "name": "Not Enough Workshop Mods",
       "author": "6ix",
-      "description": "Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get DELETED from your computer on game launch. v1.1.0 is a full rewrite for reliability: every Steam page query is time-bounded so a cold/unready Steam can never hang the loading screen; the game NEVER deletes local mods on an incomplete, failed, or empty subscription list (only on a complete, authoritative one); each mod is loaded in isolation so one bad mod can't abort the rest; and mod downloads are deferred off the boot loading screen to prevent cold-boot freezes. Mods that fail to load are shown in My Mods with a red (Skipped) / amber (Partial) tag instead of vanishing silently. Cross-platform (Windows/Mac/Linux/Steam Deck).",
-      "version": "1.1.1",
+      "description": "Stops the game from deleting your Steam Workshop mods. On a Steam hiccup at launch the game can wipe ALL your locally-installed workshop mods at once — this makes that impossible: mods are only ever removed against a complete, confirmed subscription list, never on a failed, empty, or timed-out one, and it retries quietly in the background until Steam responds. A second independent safety net blocks any mass-delete even if a future game update breaks the main fix. Mods that fail to load show a red (Skipped) / amber (Partial) tag in My Mods instead of vanishing silently. Updated for game v0.1.3. Cross-platform (Windows/Mac/Linux/Steam Deck).",
+      "version": "1.2.1",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/not-enough-workshop-mods/WorkshopUnlock.dll",
-      "sha256": "6f80b08ab18768182c8f88304c24784fc4a309a2a0609712e75ce26cadddda29",
-      "size_bytes": 34816,
+      "sha256": "c73143e4eb635f18f4d1685c02cab5c49a7f93dd3b88b7cbd85ecd9b82ba264d",
+      "size_bytes": 37376,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/not-enough-workshop-mods",
-      "category": "fixes"
-      "discontinued": true
+      "category": "fixes",
+      "discontinued": false
     },
     {
       "id": "6ix.StopReimporting",
