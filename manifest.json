@@ -60,6 +60,7 @@
       "size_bytes": 34816,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/not-enough-workshop-mods",
       "category": "fixes"
+      "discontinued": true
     },
     {
       "id": "6ix.StopReimporting",
