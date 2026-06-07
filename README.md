@@ -27,10 +27,15 @@
   <a href="LICENSE"><img src="https://img.shields.io/github/license/6xvl/paralives-plugins-index?style=for-the-badge&label=License&color=lightgrey&labelColor=1a1a2e" alt="License: MIT"></a>
 </p>
 
-<!-- ── Star history ── -->
-<p align="center">
-  <a href="https://star-history.com/#6xvl/paralives-plugins-index&Date"><img src="https://api.star-history.com/svg?repos=6xvl/paralives-plugins-index&type=Date" alt="Star History Chart" width="600"></a>
-</p>
+## Star History
+
+<a href="https://www.star-history.com/?repos=6xvl%2Fparalives-plugins-index&type=date&legend=bottom-right">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&theme=dark&legend=bottom-right" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&legend=bottom-right" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&legend=bottom-right" />
+ </picture>
+</a>
 
 Browse and install community mods for [Paralives](https://store.steampowered.com/app/1118520/Paralives/) from inside the game. No manual file copying after the first install.
 
