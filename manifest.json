@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-06-05T02:47:46Z",
+  "updated": "2026-06-07T09:35:00Z",
   "categories": [
     {
       "id": "fixes",
@@ -72,6 +72,18 @@
       "sha256": "7f80138a0005cb5e955786f3056404a3dbfc6b2a1f2c4fe47345b0e40b82e304",
       "size_bytes": 57344,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/stop-reimporting",
+      "category": "fixes"
+    },
+    {
+      "id": "6ix.SaferSaves",
+      "name": "Safer Saves",
+      "author": "6ix",
+      "description": "Protects your saved games from being lost or corrupted. Every save is written safely off to the side and only swapped in once it's fully on disk, so a crash or power loss mid-save never leaves you with a broken file. It also quietly keeps your last 5 saves as backups, checks each save before loading, and — if one ever looks damaged — offers to restore the most recent good backup (keeping your damaged files in a '.corrupt' folder just in case). Press F8 any time for an instant manual backup. Works on its own in the background; safe to add or remove at any time.",
+      "version": "1.0.0",
+      "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/safer-saves/SaferSaves.dll",
+      "sha256": "cb632b8d82669a798c1ecf80d6a40b9439ab118cd4722844756cf03daf031f9c",
+      "size_bytes": 29696,
+      "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/safer-saves",
       "category": "fixes"
     },
     {
