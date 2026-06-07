@@ -109,6 +109,18 @@
       "size_bytes": 23552,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/tools/what-is-my-loading-doing",
       "category": "tools"
+    },
+    {
+      "id": "Rockz.DirectControl",
+      "name": "Direct Control",
+      "author": "Rockz",
+      "description": "Move your selected Para yourself with WASD instead of clicking around. Adds a third-person camera you can swing with the mouse, an in-game settings menu with fully rebindable keys (AZERTY/QWERTZ friendly), sprinting with a real running animation, mood-based walk styles, a toggle to stop furniture/walls fading, auto-opening doors, and smoother collision. F1 toggles it on/off, F4 opens settings. A community collaboration — authored and maintained by Rockz.",
+      "version": "0.3",
+      "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/gameplay/direct-control/DirectControl.dll",
+      "sha256": "711c1a678f35bc96832592362fb032b0e17c768487fbe9ff7169657cb8bdb499",
+      "size_bytes": 2154496,
+      "homepage": "https://github.com/RockZ-01/DirectControl",
+      "category": "gameplay"
     }
   ]
 }
