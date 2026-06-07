@@ -67,10 +67,10 @@
       "name": "FixMyReimport",
       "author": "6ix",
       "description": "Keeps your game from getting stuck on the loading screen. If a mod won't load, gets the game stuck on the 'Reimporting Assets' screen, or a save is damaged, your game no longer freezes — it either skips the bad part and keeps going, or, if a load truly can't finish, brings you back to the main menu with a Retry button instead of leaving you stuck. Even with a big pile of mods where several are broken, your game still starts and loads all the good ones, and notes which one caused the trouble. Broken mods are tried again next launch, so a one-time hiccup (like a mod still downloading) isn't switched off for good. Updated for game v0.1.3.",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/stop-reimporting/StopReimporting.dll",
-      "sha256": "cd4aac852ea477e27470da5128652e11ff7d1551a5a0857b428b82991a044192",
-      "size_bytes": 56832,
+      "sha256": "7f80138a0005cb5e955786f3056404a3dbfc6b2a1f2c4fe47345b0e40b82e304",
+      "size_bytes": 57344,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/stop-reimporting",
       "category": "fixes"
     },
