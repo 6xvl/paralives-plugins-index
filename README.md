@@ -33,6 +33,14 @@ Browse and install community mods for [Paralives](https://store.steampowered.com
 
 ---
 
+## Support
+
+If Plugin Hub or any of these mods make your Paralives experience better, consider supporting on **[Patreon](https://www.patreon.com/6xvl)** or **[Ko-fi](https://ko-fi.com/6xvls)**. Goes directly toward more mods + maintenance time.
+
+The blue **Support this project** button in the Plugin Hub UI links to the Patreon page.
+
+---
+
 ## Star History
 
 <a href="https://www.star-history.com/?repos=6xvl%2Fparalives-plugins-index&type=date&legend=bottom-right">
@@ -201,14 +209,6 @@ Get the SHA256 with PowerShell:
 ```powershell
 Get-FileHash -Algorithm SHA256 .\YourPlugin.dll
 ```
-
----
-
-## Support
-
-If Plugin Hub or any of these mods make your Paralives experience better, consider supporting on **[Patreon](https://www.patreon.com/6xvl)** or **[Ko-fi](https://ko-fi.com/6xvls)**. Goes directly toward more mods + maintenance time.
-
-The blue **Support this project** button in the Plugin Hub UI links to the Patreon page.
 
 ---
 
