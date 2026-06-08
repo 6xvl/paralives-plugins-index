@@ -33,6 +33,18 @@ Browse and install community mods for [Paralives](https://store.steampowered.com
 
 ---
 
+## Star History
+
+<a href="https://www.star-history.com/?repos=6xvl%2Fparalives-plugins-index&type=date&legend=bottom-right">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&theme=dark&legend=bottom-right" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&legend=bottom-right" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&legend=bottom-right" />
+ </picture>
+</a>
+
+---
+
 ## Install
 
 **[⬇ Download the modpack zip](https://github.com/6xvl/paralives-plugins-index/releases/latest)** (1.2 MB)
@@ -196,18 +208,6 @@ Get-FileHash -Algorithm SHA256 .\YourPlugin.dll
 If Plugin Hub or any of these mods make your Paralives experience better, consider supporting on **[Patreon](https://www.patreon.com/6xvl)** or **[Ko-fi](https://ko-fi.com/6xvls)**. Goes directly toward more mods + maintenance time.
 
 The blue **Support this project** button in the Plugin Hub UI links to the Patreon page.
-
----
-
-## Star History
-
-<a href="https://www.star-history.com/?repos=6xvl%2Fparalives-plugins-index&type=date&legend=bottom-right">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&theme=dark&legend=bottom-right" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&legend=bottom-right" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&legend=bottom-right" />
- </picture>
-</a>
 
 ---
 
