@@ -135,6 +135,19 @@
       "homepage": "https://github.com/RockZ-01/DirectControl",
       "category": "gameplay",
       "thumbnail": "https://github.com/RockZ-01/DirectControl/raw/main/thumbnail.png"
+    },
+    {
+      "id": "com.xsauroxplayer.paratraits",
+      "name": "Traits",
+      "author": "xSauroXplayer",
+      "description": "Adds a traits panel to character creation so you can give your Parafolk personality traits, and they save with your game. The whole mod is a single file with all 521 icons built in, and it creates an editable Resources folder on first launch so you can add, remove, or re-skin traits yourself. It keeps its trait data in its own file, so it never touches your game saves. Authored and maintained by xSauroXplayer.",
+      "version": "1.0.0",
+      "download": "https://github.com/XSauroxPlayer/ParalivesTraitsProject/releases/download/V1.0.0/ParalivesTraitsProject.dll",
+      "sha256": "0f02592fc6f6ef64d7189dac63bfa8631ab93a4aa7e70bddf0983a586fb4b237",
+      "size_bytes": 6062592,
+      "homepage": "https://github.com/XSauroxPlayer/ParalivesTraitsProject",
+      "category": "gameplay",
+      "thumbnail": "https://github.com/XSauroxPlayer/ParalivesTraitsProject/raw/main/thumbnail.png"
     }
   ]
 }
