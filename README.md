@@ -126,7 +126,7 @@ Everything's already in the zip — you just point Terminal at the folder, then 
 | `BepInEx/plugins/WhatIsMyLoadingDoing.dll` | Shows what the game is loading on the loading screen, and names the exact item if it gets stuck. |
 | `BepInEx/plugins/StatsOverlay.dll` | F3 stats panel — useful for spotting performance issues. |
 
-A few mods aren't pre-bundled — **Menu FPS Limiter**, **Safer Saves**, and **Direct Control** — install any of them from inside the Plugin Hub UI in one click.
+A few mods aren't pre-bundled — **Menu FPS Limiter**, **Safer Saves**, **Direct Control**, and **Traits** — install any of them from inside the Plugin Hub UI in one click.
 
 ### Updating
 
@@ -150,6 +150,7 @@ Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepIn
 | Performance | **Menu FPS Limiter** | install from Hub | Caps the frame rate at 60 in the main menu and 30 when the window isn't focused (alt-tab). Gameplay runs uncapped by default. Stops your fans screaming while the menu sits at 200+ fps doing nothing. |
 | Fixes | **Safer Saves** | install from Hub | Protects your saves from loss or corruption — writes each save safely so a crash mid-save can't break it, keeps your last 5 saves as backups, and offers to restore a good one if a save ever looks damaged. Press F8 for a manual backup. |
 | Gameplay | **Direct Control** | install from Hub | Move your Para yourself with WASD plus a third-person camera, fully rebindable keys, sprinting, mood-based walk styles, and auto-opening doors. F1 toggles it, F4 opens settings. A community mod by **Rockz**. |
+| Gameplay | **[Traits](https://github.com/XSauroxPlayer/ParalivesTraitsProject)** | install from Hub | Adds a trait selection panel to character creation so you can give your Parafolk personality traits, saved with your game. Fully editable, with a public API other mods can build on. A community mod by **[xSauroXplayer](https://github.com/XSauroxPlayer/ParalivesTraitsProject)**. |
 
 Hover any mod card in Plugin Hub for the same description in-game. More on the way — open a PR to add yours, see [Contributing](#contributing).
 
