@@ -27,17 +27,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/github/license/6xvl/paralives-plugins-index?style=for-the-badge&label=License&color=lightgrey&labelColor=1a1a2e" alt="License: MIT"></a>
 </p>
 
-## Star History
-
-<a href="https://www.star-history.com/?repos=6xvl%2Fparalives-plugins-index&type=date&legend=bottom-right">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&theme=dark&legend=bottom-right" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&legend=bottom-right" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&legend=bottom-right" />
- </picture>
-</a>
-
-Browse and install community mods for [Paralives](https://store.steampowered.com/app/1118520/Paralives/) from inside the game. No manual file copying after the first install.
+Browse and install community mods for [Paralives](https://store.steampowered.com/app/1118520/Paralives/) from inside the game — each mod shows its own thumbnail on its card, and there's no manual file copying after the first install.
 
 > **Need help?** Join the **[Discord](https://discord.gg/XMXRPTDJv5)** → find the **mods** channel → open the **`[Plugin Hub] Help`** thread inside it.
 
@@ -124,7 +114,7 @@ Everything's already in the zip — you just point Terminal at the folder, then 
 | `BepInEx/plugins/WhatIsMyLoadingDoing.dll` | Shows what the game is loading on the loading screen, and names the exact item if it gets stuck. |
 | `BepInEx/plugins/StatsOverlay.dll` | F3 stats panel — useful for spotting performance issues. |
 
-Only **Menu FPS Limiter** isn't pre-bundled — install it from inside the Plugin Hub UI in one click.
+A few mods aren't pre-bundled — **Menu FPS Limiter**, **Safer Saves**, and **Direct Control** — install any of them from inside the Plugin Hub UI in one click.
 
 ### Updating
 
@@ -146,6 +136,8 @@ Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepIn
 | Fixes | **Not Enough Workshop Mods** | ✅ pre-installed | Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get **deleted** from your computer on game launch. |
 | Fixes | **FixMyReimport** | ✅ pre-installed | Keeps one broken or outdated mod from freezing the "Reimporting Assets" loading screen or your save. It skips just that mod for the session, tells you which one, and tries it again next launch. |
 | Performance | **Menu FPS Limiter** | install from Hub | Caps the frame rate at 60 in the main menu and 30 when the window isn't focused (alt-tab). Gameplay runs uncapped by default. Stops your fans screaming while the menu sits at 200+ fps doing nothing. |
+| Fixes | **Safer Saves** | install from Hub | Protects your saves from loss or corruption — writes each save safely so a crash mid-save can't break it, keeps your last 5 saves as backups, and offers to restore a good one if a save ever looks damaged. Press F8 for a manual backup. |
+| Gameplay | **Direct Control** | install from Hub | Move your Para yourself with WASD plus a third-person camera, fully rebindable keys, sprinting, mood-based walk styles, and auto-opening doors. F1 toggles it, F4 opens settings. A community mod by **Rockz**. |
 
 Hover any mod card in Plugin Hub for the same description in-game. More on the way — open a PR to add yours, see [Contributing](#contributing).
 
@@ -175,7 +167,7 @@ You don't have to — Plugin Hub already checks everything automatically. But if
 Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
 ```
 
-It should print `fe5c02a70d1e6c678e9166e5841f0fe0811ae6065a7a26ded967a185830b05e5`.
+For the current **v1.0.20** release it should print `a7ab45bb890e322e758fc97af9ab0c7577774be7b4c07e1629945c0ab8fe1081`. (This changes with every release — and you never *have* to check it, because Plugin Hub already verifies every individual mod against `manifest.json` on download.)
 </details>
 
 ---
@@ -204,6 +196,18 @@ Get-FileHash -Algorithm SHA256 .\YourPlugin.dll
 If Plugin Hub or any of these mods make your Paralives experience better, consider supporting on **[Patreon](https://www.patreon.com/6xvl)** or **[Ko-fi](https://ko-fi.com/6xvls)**. Goes directly toward more mods + maintenance time.
 
 The blue **Support this project** button in the Plugin Hub UI links to the Patreon page.
+
+---
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=6xvl%2Fparalives-plugins-index&type=date&legend=bottom-right">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&theme=dark&legend=bottom-right" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&legend=bottom-right" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=6xvl/paralives-plugins-index&type=date&legend=bottom-right" />
+ </picture>
+</a>
 
 ---
 
