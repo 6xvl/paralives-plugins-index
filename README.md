@@ -24,7 +24,7 @@
 <p align="center">
   <a href="https://store.steampowered.com/app/1118520/Paralives/"><img src="https://img.shields.io/badge/Game-Paralives-1b2838?style=for-the-badge&logo=steam&logoColor=white&labelColor=1a1a2e" alt="For Paralives on Steam"></a>
   &nbsp;
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/6xvl/paralives-plugins-index?style=for-the-badge&label=License&color=lightgrey&labelColor=1a1a2e" alt="License: MIT"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-lightgrey?style=for-the-badge&labelColor=1a1a2e" alt="License: All Rights Reserved, personal use only"></a>
 </p>
 
 Browse and install community mods for [Paralives](https://store.steampowered.com/app/1118520/Paralives/) from inside the game — each mod shows its own thumbnail on its card, and there's no manual file copying after the first install.
@@ -214,6 +214,8 @@ The blue **Support this project** button in the Plugin Hub UI links to the Patre
 
 ## License
 
-[MIT](LICENSE) — do what you want, just don't blame us if your save breaks. 6ix takes no responsibility for community-submitted mods; they're MIT-licensed by their authors. Bundled BepInEx is MIT — see the [BepInEx repo](https://github.com/BepInEx/BepInEx) for upstream copyright.
+[All Rights Reserved](LICENSE). The 6ix Plugin Hub and the mods 6ix made are free to download and use in your own game. They are not free to redistribute, modify, rebrand, or reuse in other projects. See [LICENSE](LICENSE) for the exact terms.
 
-— [@6xvl](https://github.com/6xvl)
+Mods by other creators are linked here, not owned by 6ix, and stay under their own authors' terms. The bundled BepInEx loader is MIT-licensed by the [BepInEx project](https://github.com/BepInEx/BepInEx).
+
+[@6xvl](https://github.com/6xvl)

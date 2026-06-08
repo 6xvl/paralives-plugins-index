@@ -1,21 +1,31 @@
-MIT License
+6ix Plugin Hub — All Rights Reserved
+Copyright (c) 2026 6ix.
 
-Copyright (c) 2026 6ix
+This software (the "6ix Plugin Hub" and the mods authored by 6ix in this
+repository, together the "Software") is provided for personal use only.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+You MAY:
+  - Download the Software and use it for your own personal Paralives gameplay.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+You MAY NOT:
+  - Redistribute, re-upload, mirror, or share the Software, in whole or in
+    part, by any means.
+  - Publish or present the Software, modified or unmodified, under any name
+    other than 6ix.
+  - Modify, adapt, decompile, reverse engineer, or create derivative works
+    from the Software.
+  - Include or reuse the Software, in whole or in part, in any other project
+    or compilation.
+
+Mods authored by other creators are linked from this repository, not
+redistributed by it, and remain the property of their respective authors under
+their own terms.
+
+The bundled BepInEx loader and its components are the property of the BepInEx
+project and are licensed separately under the MIT License; this notice does not
+apply to them. See https://github.com/BepInEx/BepInEx for upstream copyright.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+IMPLIED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.
