@@ -180,7 +180,7 @@ You don't have to — Plugin Hub already checks everything automatically. But if
 Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
 ```
 
-For the current **v1.0.20** release it should print `a7ab45bb890e322e758fc97af9ab0c7577774be7b4c07e1629945c0ab8fe1081`. (This changes with every release — and you never *have* to check it, because Plugin Hub already verifies every individual mod against `manifest.json` on download.)
+For the current **v1.0.21** release it should print `caed5707796c8485b085a14cc5158ae6f49067037165f881501cb7b9a629f0d2`. (This changes with every release — and you never *have* to check it, because Plugin Hub already verifies every individual mod against `manifest.json` on download.)
 </details>
 
 ---
