@@ -55,7 +55,7 @@ The blue **Support this project** button in the Plugin Hub UI links to the Patre
 
 ## Install
 
-**[⬇ Download the modpack zip](https://github.com/6xvl/paralives-plugins-index/releases/latest)** (1.2 MB)
+**[⬇ Download the modpack zip](https://github.com/6xvl/paralives-plugins-index/releases/latest)** (1.2 MB) · works with **Paralives 0.1.3**
 
 Same three steps on every system: **unzip it into your game folder → start the game → open Mods → Plugin Hub.** Pick yours below.
 
@@ -160,7 +160,7 @@ Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepIn
 | Gameplay | **[Direct Control](https://github.com/RockZ-01/DirectControl)** | install from Hub | Move your Para yourself with WASD plus a third-person camera, fully rebindable keys, sprinting, mood-based walk styles, and auto-opening doors. F1 toggles it, F4 opens settings. A community mod by **[Rockz](https://github.com/RockZ-01/DirectControl)**. |
 | Gameplay | **[Traits](https://github.com/XSauroxPlayer/ParalivesTraitsProject)** | install from Hub | Adds a trait selection panel to character creation so you can give your Parafolk personality traits, saved with your game. Fully editable, with a public API other mods can build on. A community mod by **[xSauroXplayer](https://github.com/XSauroxPlayer/ParalivesTraitsProject)**. |
 
-Hover any mod card in Plugin Hub for the same description in-game. More on the way — open a PR to add yours, see [Contributing](#contributing).
+Hover any mod card in Plugin Hub for the same description in-game. Made a mod? See [Contributing](#contributing) to get it listed.
 
 ---
 
@@ -177,7 +177,7 @@ Hover any mod card in Plugin Hub for the same description in-game. More on the w
 
 - **Hash verification on every download.** If a file doesn't match the manifest hash, it's rejected and nothing is written.
 - **No telemetry, no analytics, no calling home.** Plugin Hub only connects to GitHub to fetch the manifest and the DLLs you explicitly click on.
-- **Auditable.** Every mod's source, the loader, and the manifest are all in this repo.
+- **Auditable.** The manifest and every bundled mod's exact file live in this repo; community mods link to their authors' own repos. You can verify any download's hash yourself (below).
 
 <details>
 <summary>Want to double-check the download yourself? (optional — for the technical)</summary>
@@ -195,20 +195,15 @@ For the current **v1.0.21** release it should print `caed5707796c8485b085a14cc51
 
 ## Contributing
 
-To get your mod into Plugin Hub:
+The hub lists mods, it doesn't host other people's code. Your mod stays on your own repo, under your own license, and the hub just points players at it.
 
-1. Build it as a normal BepInEx 5 plugin (`BaseUnityPlugin` + `[BepInPlugin]`), target `netstandard2.0`.
-2. Pick a category from `manifest.json` → `categories` (`fixes`, `performance`, `ui`, `quality-of-life`, `gameplay`, `tools`).
-3. Open a PR adding:
-   - `plugins/<category>/<plugin-name>/YourPlugin.dll`
-   - `plugins/<category>/<plugin-name>/README.md`
-   - A new entry in `manifest.json` with `id` matching your `[BepInPlugin]` GUID, the raw-URL `download`, computed `sha256`, matching `size_bytes`, and a 1–2 sentence `description` (what the user sees on hover).
+To get yours listed:
 
-Get the SHA256 with PowerShell:
+1. Build it as a normal BepInEx 5 plugin (`BaseUnityPlugin` + `[BepInPlugin]`), targeting `netstandard2.0`, and host the `.dll` on a release in your own GitHub repo.
+2. Reach out on the [Discord](https://discord.gg/XMXRPTDJv5) with the link.
+3. I'll add a manifest entry that points at your release, credited to you with a link back to your repo. The version on the card follows your latest release.
 
-```powershell
-Get-FileHash -Algorithm SHA256 .\YourPlugin.dll
-```
+You keep full ownership. Nothing of yours is copied into this repo.
 
 ---
 
