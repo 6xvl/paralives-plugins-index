@@ -1,6 +1,7 @@
 {
   "schema": 2,
   "updated": "2026-06-07T19:26:05Z",
+  "thumbnail_base": "https://github.com/6xvl/paralives-plugins-index/raw/main/assets/thumbnails",
   "categories": [
     {
       "id": "fixes",
@@ -132,8 +133,7 @@
       "sha256": "585faea27302b49735f0fecb8f9f441f9eb10006bec85abeb97e68f576281c09",
       "size_bytes": 2155520,
       "homepage": "https://github.com/RockZ-01/DirectControl",
-      "category": "gameplay",
-      "thumbnail": "https://github.com/6xvl/paralives-plugins-index/raw/main/assets/direct-control.png"
+      "category": "gameplay"
     }
   ]
 }
