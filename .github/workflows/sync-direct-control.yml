@@ -31,7 +31,7 @@ jobs:
           if [ -z "$VER" ] || [ "$VER" = "null" ]; then echo "No upstream release — skipping."; exit 0; fi
           if [ "$HAS_DLL" = "0" ]; then echo "Release $VER has no DirectControl.dll asset — skipping."; exit 0; fi
 
-          CUR=$(jq -r '(.plugins[] | select(.id == "Rockz.DirectControl") | .version) // ""' manifest.json)
+          CUR=$(jq -r '(.plugins[] | select(.id == "rockz.paralives.directcontrol") | .version) // ""' manifest.json)
           echo "upstream=$VER  manifest=$CUR"
           if [ "$VER" = "$CUR" ]; then echo "Already up to date."; exit 0; fi
 
@@ -45,7 +45,7 @@ jobs:
 
           jq --arg v "$VER" --arg s "$SHA" --argjson z "$SIZE" --arg u "$NOW" '
             .updated = $u
-            | (.plugins[] | select(.id == "Rockz.DirectControl")) |= (.version = $v | .sha256 = $s | .size_bytes = $z)
+            | (.plugins[] | select(.id == "rockz.paralives.directcontrol")) |= (.version = $v | .sha256 = $s | .size_bytes = $z)
           ' manifest.json > manifest.tmp && mv manifest.tmp manifest.json
 
           git config user.name "6ix"

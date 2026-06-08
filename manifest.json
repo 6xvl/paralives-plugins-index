@@ -124,7 +124,7 @@
       "category": "tools"
     },
     {
-      "id": "Rockz.DirectControl",
+      "id": "rockz.paralives.directcontrol",
       "name": "Direct Control",
       "author": "Rockz",
       "description": "Move your selected Para yourself with WASD instead of clicking around. Adds a third-person camera you can swing with the mouse, an in-game settings menu with fully rebindable keys (AZERTY/QWERTZ friendly), sprinting with a real running animation, mood-based walk styles, a toggle to stop furniture/walls fading, auto-opening doors, and smoother collision. F1 toggles it on/off, F4 opens settings. A community collaboration — authored and maintained by Rockz.",
