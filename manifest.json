@@ -88,18 +88,6 @@
       "category": "fixes"
     },
     {
-      "id": "6ix.FpsLimiter",
-      "name": "Menu FPS Limiter",
-      "author": "6ix",
-      "description": "Stops your fans screaming while the menu sits at 200+ fps doing nothing. Caps menu to 60fps, drops to 10fps when alt-tabbed, 3fps when minimized. Gameplay runs uncapped. All thresholds configurable.",
-      "version": "1.0.3",
-      "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/performance/fps-limiter/FpsLimiter.dll",
-      "sha256": "dda106b6094c1b9abb4ac349adb8caeb79c040fbe993dec9bfde060a63895daa",
-      "size_bytes": 10752,
-      "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/performance/fps-limiter",
-      "category": "performance"
-    },
-    {
       "id": "6ix.StatsOverlay",
       "name": "Stats Overlay",
       "author": "6ix",
