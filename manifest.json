@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-06-16T13:00:31Z",
+  "updated": "2026-06-20T00:00:00Z",
   "thumbnail_base": "https://github.com/6xvl/paralives-plugins-index/raw/main/assets/thumbnails",
   "categories": [
     {
@@ -54,14 +54,14 @@
       "id": "6ix.WorkshopUnlock",
       "name": "Not Enough Workshop Mods",
       "author": "6ix",
-      "description": "Stops the game from deleting your Steam Workshop mods. On a Steam hiccup at launch the game can wipe ALL your locally-installed workshop mods at once â€” this makes that impossible: mods are only ever removed against a complete, confirmed subscription list, never on a failed, empty, or timed-out one, and it retries quietly in the background until Steam responds. A second independent safety net blocks any mass-delete even if a future game update breaks the main fix. Mods that fail to load show a red (Skipped) / amber (Partial) tag in My Mods instead of vanishing silently. Updated for game v0.1.3. Cross-platform (Windows/Mac/Linux/Steam Deck).",
+      "description": "Retired and no longer updated. If you already have it installed, keep it for now: it still protects your mods, and the current FixMyReimport release does not include this fix yet. Stops the game from deleting your Steam Workshop mods. On a Steam hiccup at launch the game can wipe ALL your locally-installed workshop mods at once â€” this makes that impossible: mods are only ever removed against a complete, confirmed subscription list, never on a failed, empty, or timed-out one, and it retries quietly in the background until Steam responds. A second independent safety net blocks any mass-delete even if a future game update breaks the main fix. Mods that fail to load show a red (Skipped) / amber (Partial) tag in My Mods instead of vanishing silently. Updated for game v0.1.3. Cross-platform (Windows/Mac/Linux/Steam Deck).",
       "version": "1.2.1",
       "download": "https://github.com/6xvl/paralives-plugins-index/raw/main/plugins/fixes/not-enough-workshop-mods/WorkshopUnlock.dll",
       "sha256": "c73143e4eb635f18f4d1685c02cab5c49a7f93dd3b88b7cbd85ecd9b82ba264d",
       "size_bytes": 37376,
       "homepage": "https://github.com/6xvl/paralives-plugins-index/tree/main/plugins/fixes/not-enough-workshop-mods",
       "category": "fixes",
-      "discontinued": false
+      "discontinued": true
     },
     {
       "id": "6ix.StopReimporting",
