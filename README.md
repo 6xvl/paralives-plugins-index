@@ -55,7 +55,7 @@ The blue **Support this project** button in the Plugin Hub UI links to the Patre
 
 ## Install
 
-**[⬇ Download the modpack zip](https://github.com/6xvl/paralives-plugins-index/releases/latest)** (1.2 MB) · works with **Paralives 0.1.3**
+**[⬇ Download the modpack zip](https://github.com/6xvl/paralives-plugins-index/releases/latest)** (1.3 MB) · works with **Paralives 0.1.4**
 
 Same three steps on every system: **unzip it into your game folder → start the game → open Mods → Plugin Hub.** Pick yours below.
 
@@ -129,12 +129,12 @@ Everything's already in the zip — you just point Terminal at the folder, then 
 | `run_bepinex.sh` + `libdoorstop.dylib` | macOS BepInEx loader (Doorstop 4.5.0), preconfigured. Windows/Linux ignore these; macOS uses them instead of `winhttp.dll`. |
 | `BepInEx/core/*` | BepInEx runtime + HarmonyX/MonoMod patching libraries. |
 | `BepInEx/plugins/PluginHub.dll` | This project — the in-game browser. It also self-updates and updates your installed mods on each launch: reads `manifest.json`, downloads any newer DLLs, verifies them against the manifest hash, and applies them. |
-| `BepInEx/plugins/WorkshopUnlock.dll` | "Not Enough Workshop Mods" — fixes the Steam Workshop 50-mod cap. |
-| `BepInEx/plugins/StopReimporting.dll` | "FixMyReimport" — keeps one broken/outdated mod from freezing the loading screen or your save. (The file keeps its old name so it updates in place.) |
+| `BepInEx/plugins/StopReimporting.dll` | "FixMyReimport" keeps one broken or outdated mod from freezing the loading screen or your save, and now also protects your Steam Workshop mods from being deleted when Steam stumbles at launch. (The file keeps its old name so it updates in place.) |
+| `BepInEx/plugins/ParalivesOptimisationMod.dll` | "Paralives Optimisation" boosts FPS and adds a full Video settings panel (a Game Resolution upscaler that keeps the UI sharp, anti-aliasing, bloom, and more). |
 | `BepInEx/plugins/WhatIsMyLoadingDoing.dll` | Shows what the game is loading on the loading screen, and names the exact item if it gets stuck. |
 | `BepInEx/plugins/StatsOverlay.dll` | F3 stats panel — useful for spotting performance issues. |
 
-A few mods aren't pre-bundled — **Menu FPS Limiter**, **Safer Saves**, **Direct Control**, and **Traits** — install any of them from inside the Plugin Hub UI in one click.
+A few mods aren't pre-bundled — **Safer Saves**, **Direct Control**, and **Traits** — install any of them from inside the Plugin Hub UI in one click.
 
 ### Updating
 
@@ -153,9 +153,8 @@ Delete `winhttp.dll`, `doorstop_config.ini`, `.doorstop_version`, and the `BepIn
 | Tools | **Plugin Hub** | ✅ pre-installed | Browse, install, and toggle Paralives mods from inside the game. Auto-updates itself and your installed mods on each launch. Also fixes the Steam-offline boot hang so the game launches without internet. |
 | Tools | **Stats Overlay** | ✅ pre-installed | Unity-Editor-style stats panel — FPS, CPU/render times, draw calls, triangles, audio level, animation counts. Top-left overlay. Press F3 to toggle. |
 | Tools | **What Is My Loading Doing** | ✅ pre-installed | Shows what the game is doing on the loading screen ("Loading furniture 142/300", "Loading characters"…) instead of just a spinning icon, and names the exact item if a load gets stuck. |
-| Fixes | **Not Enough Workshop Mods** | ✅ pre-installed | Fixes the Steam Workshop 50-mod cap. Without it, any subscribed mods past #50 get **deleted** from your computer on game launch. |
-| Fixes | **FixMyReimport** | ✅ pre-installed | Keeps one broken or outdated mod from freezing the "Reimporting Assets" loading screen or your save. It skips just that mod for the session, tells you which one, and tries it again next launch. |
-| Performance | **Menu FPS Limiter** | install from Hub | Caps the frame rate at 60 in the main menu and 30 when the window isn't focused (alt-tab). Gameplay runs uncapped by default. Stops your fans screaming while the menu sits at 200+ fps doing nothing. |
+| Fixes | **FixMyReimport** | Pre-installed | Keeps one broken or outdated mod from freezing the "Reimporting Assets" loading screen or your save, and protects your Steam Workshop mods from being deleted when Steam stumbles at launch (this used to be the separate "Not Enough Workshop Mods"). It skips just the bad mod for the session, tells you which one, and tries it again next launch. |
+| Performance | **Paralives Optimisation** | Pre-installed | Boosts FPS and adds a full Video settings panel: a Game Resolution slider that lifts frame rate while keeping menus sharp, plus anti-aliasing, bloom, and other toggles. Starts with anti-aliasing off, bloom off, and borderless window. |
 | Fixes | **Safer Saves** | install from Hub | Protects your saves from loss or corruption — writes each save safely so a crash mid-save can't break it, keeps your last 5 saves as backups, and offers to restore a good one if a save ever looks damaged. Press F8 for a manual backup. |
 | Gameplay | **[Direct Control](https://github.com/RockZ-01/DirectControl)** | install from Hub | Move your Para yourself with WASD plus a third-person camera, fully rebindable keys, sprinting, mood-based walk styles, and auto-opening doors. F1 toggles it, F4 opens settings. A community mod by **[Rockz](https://github.com/RockZ-01/DirectControl)**. |
 | Gameplay | **[Traits](https://github.com/XSauroxPlayer/ParalivesTraitsProject)** | install from Hub | Adds a trait selection panel to character creation so you can give your Parafolk personality traits, saved with your game. Fully editable, with a public API other mods can build on. A community mod by **[xSauroXplayer](https://github.com/XSauroxPlayer/ParalivesTraitsProject)**. |
@@ -188,7 +187,7 @@ You don't have to — Plugin Hub already checks everything automatically. But if
 Get-FileHash -Algorithm SHA256 .\6ix-paralives-modpack.zip
 ```
 
-For the current **v1.0.21** release it should print `caed5707796c8485b085a14cc5158ae6f49067037165f881501cb7b9a629f0d2`. (This changes with every release — and you never *have* to check it, because Plugin Hub already verifies every individual mod against `manifest.json` on download.)
+For the current **v1.0.23** release it should print `1fe2b5cdbcd1763e163fb86395f6c1ce4ac2458cda0ab9a1f77c30c45dac4162`. (This changes with every release — and you never *have* to check it, because Plugin Hub already verifies every individual mod against `manifest.json` on download.)
 </details>
 
 ---
