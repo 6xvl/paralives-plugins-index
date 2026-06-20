@@ -51,7 +51,7 @@
       "discontinued": false
     },
     {
-      "id": "6ix.ParalivesOptimisation",
+      "id": "com.paralives.optimisation.plugin",
       "name": "Paralives Optimisation",
       "author": "6ix",
       "description": "Boosts FPS and adds a full Video settings overhaul. New this version: a Game Resolution slider that renders the 3D world at a lower resolution and upscales it to your screen while the UI stays razor sharp, plus separate MSAA and a cheaper post-process anti-aliasing option, image sharpening, and on/off toggles for bloom, ambient occlusion, depth of field, vignette, chromatic aberration, film grain, and shadow distance. Ships with anti-aliasing off, bloom off, and borderless window by default for the smoothest out-of-the-box performance. Under the hood it replaces several per-frame hot paths with allocation-free versions and mutes per-frame debug overhead. Every patch is fail-safe: if a game update changes a hooked method, that patch falls back to vanilla behaviour and logs once. Updated for game v0.1.4.",
