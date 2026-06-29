@@ -46,4 +46,6 @@ These terms may be updated at any time. The current version is always available 
 
 ## Contact
 
-Open an issue at https://github.com/6xvl/paralives-plugins-index/issues
+For questions or concerns, reach the creator:
+- Discord: **6xvl**
+- Email: Wael@6xvl.com
