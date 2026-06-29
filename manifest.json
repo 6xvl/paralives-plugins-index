@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "updated": "2026-06-20T00:00:00Z",
+  "updated": "2026-06-29T12:40:16Z",
   "thumbnail_base": "https://github.com/6xvl/paralives-plugins-index/raw/main/assets/thumbnails",
   "categories": [
     {
@@ -141,8 +141,8 @@
       "name": "Traits",
       "author": "xSauroXplayer",
       "description": "Adds a traits panel to character creation so you can give your Parafolk personality traits, and they save with your game. The whole mod is a single file with all 521 icons built in, and it creates an editable Resources folder on first launch so you can add, remove, or re-skin traits yourself. It keeps its trait data in its own file, so it never touches your game saves. Authored and maintained by xSauroXplayer.",
-      "version": "1.2.3",
-      "download": "https://github.com/XSauroxPlayer/ParalivesTraitsProject/releases/download/V1.2.3/ParalivesTraitsProject.dll",
+      "version": "1.2.4",
+      "download": "https://github.com/XSauroxPlayer/ParalivesTraitsProject/releases/download/V1.2.4/ParalivesTraitsProject.dll",
       "sha256": "6df290737606886e4fc765ff8170d3fcc21dde2fb19a589ace97c6b027d68454",
       "size_bytes": 8877568,
       "homepage": "https://github.com/XSauroxPlayer/ParalivesTraitsProject",
