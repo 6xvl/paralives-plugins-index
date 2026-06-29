@@ -41,4 +41,6 @@ When you install a mod, the launcher fetches the mod file from the URL listed in
 
 ## Contact
 
-Questions or concerns: open an issue at https://github.com/6xvl/paralives-plugins-index/issues
+For questions or concerns, reach the creator:
+- Discord: **6xvl**
+- Email: Wael@6xvl.com
